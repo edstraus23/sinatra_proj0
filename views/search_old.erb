@@ -1,0 +1,81 @@
+<form action="/search" method="post">
+<%
+select0 = select1 = select2 = ""
+select3 = "selected"
+select0 = "selected" if @directory =~/2500/
+select3 = "" if @directory =~/2500/
+select1 = "selected" if @directory =~/3500/
+select3 = "" if @directory =~/3500/
+select2 = "selected" if @directory =~/5500/ && @directory !~/rdl_test/
+select3 = "" if @directory =~/5500/ && @directory !~/rdl_test/
+select3 = "selected" if @directory =~/5500/ && @directory =~/rdl_test/
+%>
+
+<table>
+<tr><td>Register:</td><td> 
+<select name="directory">
+  <option value="v:/2500_regs/rdl" <%= select0 %>>2500 Registers</option>
+  <option value="v:/3500_regs/rdl" <%= select1 %>>3500 Registers</option>
+  <option value="v:/5500_regs/rdl" <%= select2 %>>5500 Registers</option>
+  <option value="v:/5500_regs/rdl_test" <%= select3 %>>5500 Registers - test only</option>
+</select></td></tr>
+<tr><td>String: </td><td><input type="text" name="srch_str"></td></tr></table>
+ <input type="submit">
+ </form>
+
+<table>
+<th class="withborder" >Topic/Map</th><th class="withborder" >Name</th><th class="withborder">Date</th>
+ 
+
+<% 
+require 'nokogiri'
+require 'htmlentities'
+
+@srch_str="" if @srch_str == nil
+@directory="v:/5500_regs/rdl_test" if @directory == nil
+%>
+Current directory: <%= @directory %><br />
+Current searh string: <%= @srch_str %>
+
+<%
+the_filepath = File.expand_path(File.dirname(__FILE__))
+Dir.chdir(@directory)
+arr = Dir.glob("#{@directory}/*.html").sort_by{|f| File.stat(f).mtime}.reverse 
+for filename in arr 
+  
+    contents = File.open(filename, "r")     # Open for Nokogiri!
+    doc = Nokogiri::HTML(contents)
+    contents.close
+	html =  doc.css('html')
+	%>
+
+<%	
+  if html.to_s =~/#{@srch_str}/i
+	type=""
+	
+	  title1 =  doc.css('title')
+	  title2 = title1.to_s.split(/\>/)
+      title = title2[1]
+	  title = title.to_s.gsub(/\<\/title/, "")
+	
+	
+	
+	  color_select = "LightSkyBlue"
+	
+	  
+  %>
+    
+	<tr style="background-color:<%= color_select %>">
+	 <td class="withborder" valign=top width="30%"><a href=<%= filename %>> <%= filename %> </a></td> 
+	 <td class="withborder" valign=top width="40%"><%= title %></td>
+	 <td class="withborder" valign=top width="20%"><%= File.mtime(filename) %></td>
+	</tr>
+
+<%	     
+          
+		
+    end 
+ end 
+%>
+</table>
+<%  Dir.chdir(the_filepath + "/..") %>

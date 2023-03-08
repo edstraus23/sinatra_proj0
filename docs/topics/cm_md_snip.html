@@ -1,0 +1,66 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2023"><meta name="generator" content="DITA-OT"><link rel="stylesheet" type="text/css" href="../commonltr.css"><title>Markdown Code Snippets</title></head><body id="markdown-code-snippets"><nav role="toc"><ul><li><a href="../topics/cm_intro.html">Introduction</a><ul><li><a href="../topics/cm_feature.html">Features</a></li><li><a href="../topics/cm_required_software.html">Required Software</a><ul><li><a href="../topics/cm_TE.html">jQuery TE</a></li><li><a href="../topics/cm_ruby.html">Ruby</a><ul><li><a href="../topics/cm_sinatra.html">Sinatra</a></li><li><a href="../topics/cm_datamapper.html">Datamapper</a></li></ul></li><li><a href="../topics/cm_DITA_OT.html">DITA Open Tool Kit</a></li></ul></li></ul></li><li><a href="../topics/cm_install.html">Installation</a></li><li><a href="../topics/cm_setup.html">Setup</a><ul><li><a href="../topics/cm_set_variables.html">Setting Variables</a></li><li><a href="../topics/cm_display_set_of_data.html">Displaying Set of Data</a></li></ul></li><li><a href="../topics/cm_usage.html">Usage</a><ul><li><a href="../topics/cm_run_swcms.html">Running SWCMS</a></li><li><a href="../topics/cm_create_form.html">Creating a Form</a></li><li><a href="../topics/cm_create_entries.html">Creating Entries - HTML Coding</a></li><li><a href="../topics/cm_create_map_html.html">Creating a Bookmap/Topicmap - HTML Coding</a></li><li><a href="../topics/cm_create_maps.html">Creating a Bookmap/TopicMap - Markdown</a></li><li><a href="../topics/cm_run_dita_3_0.html">Running DITA OT 3.0</a></li></ul></li><li><a href="../topics/cm_html_snip.html">HTML Code Snippets</a></li><li class="active"><a href="../topics/cm_md_snip.html">Markdown Code Snippets</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">Markdown Code Snippets</h1><div class="body"><p class="p"><strong class="ph b">headings</strong></p><pre class="pre codeblock"><code># Topic title
+
+## Nested topic title
+
+# Topic title {#carrot .juice}
+
+
+# Task {.task}</code></pre><p class="p"><strong class="ph b">Context</strong></p><pre class="pre codeblock"><code>1.  Command
+
+    Info.
+    
+    
+    # Topic title
+
+## Section title {.section}
+
+## Example title {.example}</code></pre><p class="p"><strong class="ph b">links</strong></p><pre class="pre codeblock"><code>[Markdown](test.md)
+[DITA](test.dita)
+[HTML](test.html)
+[External](http://www.example.com/test.html)</code></pre><p class="p"><strong class="ph b">image</strong></p><pre class="pre codeblock"><code>An inline ![Alt](test.jpg).
+
+![Alt](test.jpg)
+
+![Alt](test.jpg "Title")</code></pre><p class="p"><strong class="ph b">table</strong></p><pre class="pre codeblock"><code>| First Header | Second Header | Third Header |
+| ------------ | :-----------: | -----------: |
+| Content      | *Long Cell*                 ||
+| Content      | **Cell**      | Cell         |
+[table title]</code></pre><p class="p"><strong class="ph b">lists</strong></p><pre class="pre codeblock"><code>*   one
+*   two
+    -   three
+    -   four
+    
+1.  one
+2.  two
+    #.  three
+    #.  four</code></pre><p class="p"><strong class="ph b">inline</strong></p><pre class="pre codeblock"><code>**bold**
+*italic*
+`code`
+~~strikethrough~~</code></pre><p class="p"><strong class="ph b">code</strong></p><pre class="pre codeblock"><code>code 1
+code 2</code></pre><p class="p"><strong class="ph b">topicmap example:</strong></p><pre class="pre codeblock"><code>&lt; map&gt;
+&lt;title&gt;DITA work at OASIS&lt;/title&gt; 
+&lt;topicref href="oasis-dita-technical-committees.md" format="markdown"&gt; 
+&lt;topicref href="dita_technical_committee.md" format="markdown"/&gt; 
+&lt;topicref href="dita_adoption_technical_committee.md" format="markdown" /&gt; 
+&lt;/topicref&gt; 
+&lt;mapref href"oasis-processes.ditamap"/&gt;
+&lt;/map&gt; </code></pre><p class="p"><strong class="ph b">bookmap example:</strong></p><pre class="pre codeblock"><code>&lt; bookmap id="taskbook"&gt;
+&lt; booktitle&gt;
+&lt; booklibrary&gt;Retro Tools&lt;/booklibrary&gt;
+&lt; mainbooktitle&gt;Product tasks&lt;/mainbooktitle&gt;
+&lt; booktitlealt&gt;Tasks and what they can do&lt;/booktitlealt&gt;&lt;/booktitle&gt;
+&lt; frontmatter&gt;
+&lt; booklists&gt;&lt;toc/&gt;&lt;/booklists&gt;
+&lt;notices href="taskbook/notices.dita"&gt;
+&lt;topicref href="taskbook/trademarks.md" format="markdown"&gt;&lt;/topicref&gt;
+&lt; /notices&gt;
+&lt; /frontmatter&gt;
+&lt; chapter href="taskbook/installing.md" format="markdown"&gt;
+&lt;topicref href="taskbook/installstorage.md" format="markdown"&gt;
+&lt;/topicref&gt;
+&lt; /chapter&gt;
+&lt; appendix href="taskbook/task_appendix.md" format="markdown"&gt;&lt;/appendix&gt;
+&lt; /bookmap&gt;
+</code></pre></div></article></main></body></html>

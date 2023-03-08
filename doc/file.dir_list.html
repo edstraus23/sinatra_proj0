@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  File: dir_list
+  
+    &mdash; Documentation by YARD 0.9.28
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "dir_list";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="file_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: dir_list</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div id='filecontents'>
+<pre class="code ruby"><code class="ruby">&lt;p&gt;Choose .ditamap file to change directory:&lt;/p&gt; &lt;form action=&quot;/dir_list&quot; method=&quot;post&quot;&gt;
+&lt;input type=&quot;file&quot; name=&quot;directory&quot;&gt; 
+&lt;input type=&quot;submit&quot;&gt;
+&lt;/form&gt;
+
+&lt;%
+</code></pre>
+
+<p>require &#39;nokogiri&#39; require &#39;htmlentities&#39;</p>
+
+<pre class="code ruby"><code class="ruby">sdir = @directory.to_s.split(/\\/)
+@directory = @directory.to_s.gsub(/\\#{sdir.last}/, &quot;&quot;)
+@directory = @directory.to_s.gsub(/\\/, &quot;/&quot;)
+%&gt;
+</code></pre>
+
+<p>&lt;table&gt; &lt;th class=“withborder” &gt;Topic/Map&lt;/th&gt;&lt;th class=“withborder” &gt;Name&lt;/th&gt;&lt;th class=“withborder” &gt;Type&lt;/th&gt;&lt;th class=“withborder”&gt;Date&lt;/th&gt;</p>
+
+<p>&lt;%  @directory=“v:/extract” if @directory.length == 0 %&gt; &lt;p&gt;Current directory: &lt;%= @directory %&gt;&lt;/p&gt; &lt;% the_filepath = File.expand_path(File.dirname(__FILE__)) Dir.chdir(@directory) arr = Dir.glob(“#@directory/*.ditamap”).sort_by{|f| File.stat(f).mtime}.reverse  for filename in arr </p>
+
+<pre class="code ruby"><code class="ruby">if filename !~/backup/
+  contents = File.open(filename, &quot;r&quot;)     # Open for Nokogiri!
+  doc = Nokogiri::XML(contents)
+  contents.close
+</code></pre>
+
+<p>	 	type=“” 	title =  doc.css(&#39;mainbooktitle&#39;) 	title = title.to_s.gsub(/&lt;/mainbooktitle&gt;/, “”)</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_title'>title</span> <span class='op'>=</span> <span class='id identifier rubyid_title'>title</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\&lt;mainbooktitle\&gt;</span><span class='regexp_end'>/</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+</code></pre>
+
+<p>	 	if title.length == 0 	  title1 =  doc.css(&#39;title&#39;) 	  title2 = title1.to_s.split(/&gt;/)</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_title'>title</span> <span class='op'>=</span> <span class='id identifier rubyid_title2'>title2</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span>
+</code></pre>
+
+<p>	  title = title.to_s.gsub(/&lt;/title/, “”) 	end 	 	map =  doc.css(&#39;bookmap&#39;) 	if map.length != 0 then 	  type = “bookmap” 	  color_select = “Aquamarine” 	else  	  map =  doc.css(&#39;map&#39;) 	  type = “topicmap” 	  color_select = “LightSkyBlue” 	end 	map = map.to_s.gsub(/&lt;//, “”) 	map = map.to_s.gsub(/&gt;/, “”)</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_map'>map</span> <span class='op'>=</span> <span class='id identifier rubyid_map'>map</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\&lt;</span><span class='regexp_end'>/</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+</code></pre>
+
+<p>	map = map.to_s.gsub(/&quot;//, “&quot;”) 	</p>
+
+<pre class="code ruby"><code class="ruby">%&gt;
+</code></pre>
+
+<p>	&lt;tr style=“background-color:&lt;%= color_select %&gt;”&gt; 	 &lt;td class=“withborder” valign=top width=“30%”&gt;&lt;a href=&lt;%= filename %&gt;&gt; &lt;%= filename %&gt; &lt;/a&gt;&lt;/td&gt;  	 &lt;td class=“withborder” valign=top width=“40%”&gt;&lt;%= title %&gt;&lt;/td&gt; 	 &lt;td class=“withborder” valign=top width=“10%”&gt;&lt;%= type %&gt;&lt;/td&gt; 	 &lt;td class=“withborder” valign=top width=“20%”&gt;&lt;%= File.mtime(filename) %&gt;&lt;/td&gt; 	&lt;/tr&gt; &lt;%</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_topics'>topics</span> <span class='op'>=</span> <span class='id identifier rubyid_map'>map</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\&quot;</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span>
+</code></pre>
+
+<p>	   for topic in topics 	     if (topic =~/.xml/ || topic =~/.ditamap/) then 		   ttitle = “File Not Found” 		   if File.exist?(topic) then 		     contents1 = File.open(@directory.chomp + “/” + topic.chomp, “r”)     # Open for Nokogiri!</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_doc1'>doc1</span> <span class='op'>=</span> <span class='const'>Nokogiri</span><span class='op'>::</span><span class='const'>XML</span><span class='lparen'>(</span><span class='id identifier rubyid_contents1'>contents1</span><span class='rparen'>)</span>
+<span class='id identifier rubyid_contents1'>contents1</span><span class='period'>.</span><span class='id identifier rubyid_close'>close</span>
+</code></pre>
+
+<p>		     ttitle1 =  doc1.css(&#39;title&#39;) 	         ttitle1 = ttitle1.to_s.gsub(/&lt;/ph&gt;/, “”) 			 ttitle1 = ttitle1.to_s.gsub(/&lt;ph.+?&quot;&gt;/, “”) 			 ttitle2 = ttitle1.to_s.split(/&gt;/)</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_ttitle'>ttitle</span> <span class='op'>=</span> <span class='id identifier rubyid_ttitle2'>ttitle2</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span>
+</code></pre>
+
+<p>			 ttitle = ttitle.to_s.gsub(/&lt;/title/, “”) 			  			  			 ttype = “” 			 color_select = “” 			 tcount = doc1.css(&#39;concept&#39;) 			 ttype =  “concept” if tcount.length &gt; 0 			 color_select = “lightgreen” if tcount.length &gt; 0 			  			 tcount = doc1.css(&#39;reference&#39;) 			 ttype =  “reference” if tcount.length &gt; 0 			 color_select = “lightpink” if tcount.length &gt; 0 			  			 tcount = doc1.css(&#39;task&#39;) 			 ttype =  “task” if tcount.length &gt; 0 			 color_select = “LemonChiffon” if tcount.length &gt; 0 			  			 tcount = doc1.css(&#39;topic&#39;) 			 ttype =  “topic” if tcount.length &gt; 0 			 color_select = “orange” if tcount.length &gt; 0 			  			 tcount = doc1.css(&#39;map&#39;) 			 ttype =  “topicmap” if tcount.length &gt; 0 			 color_select = “LightSkyBlue” if tcount.length &gt; 0 			  		   end %&gt; 	 &lt;tr &gt; 	 &lt;td class=“withborder” valign=top&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;%= @directory.chomp %&gt;/&lt;%= topic %&gt;&lt;/td&gt;  	 &lt;td class=“withborder” valign=top&gt;&lt;%= ttitle %&gt;&lt;/td&gt; 	 &lt;td class=“withborder” valign=top style=“background-color:&lt;%= color_select %&gt;”&gt;&lt;%= ttype %&gt;  &lt;/td&gt; 	 &lt;td class=“withborder” valign=top&gt;&lt;%= File.mtime(filename) %&gt;&lt;/td&gt; 	&lt;/tr&gt; &lt;%	  </p>
+
+<pre class="code ruby"><code class="ruby">end
+</code></pre>
+
+<p>		end 		</p>
+
+<pre class="code ruby"><code class="ruby">end
+</code></pre>
+
+<p>end  %&gt; &lt;/table&gt; &lt;%  Dir.chdir(the_filepath + “/..”) %&gt;</p>
+</div></div>
+
+      <div id="footer">
+  Generated on Tue Mar  7 12:42:47 2023 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.28 (ruby-3.0.2).
+</div>
+
+    </div>
+  </body>
+</html>

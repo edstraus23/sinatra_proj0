@@ -1,0 +1,94 @@
+ <p>Choose .ditamap file to change directory:</p> <form action="/dir_list_file" method="post">
+ <input type="file" name="directory"> 
+ <input type="submit">
+ </form>
+
+ <% 
+require 'nokogiri'
+require 'htmlentities'
+
+ 
+ sdir = @directory.to_s.split(/\\/)
+ @directory = @directory.to_s.gsub(/\\#{sdir.last}/, "")
+ @directory = @directory.to_s.gsub(/\\/, "/")
+ %>
+
+<table>
+<th class="withborder" >Topic/Map</th><th class="withborder" >Name</th><th class="withborder" >Type</th><th class="withborder">Date</th>
+ 
+<% 
+@directory="v:/extract" if @directory.length == 0
+%>
+<p>
+Current directory: <%= @directory %></p>
+<%
+the_filepath = File.expand_path(File.dirname(__FILE__))
+Dir.chdir(@directory)
+arr = Dir.glob("#{@directory}/*.[x,d][m,i][l,t]*").sort_by{|f| File.stat(f).mtime}.reverse 
+for filename in arr 
+  if filename !~/backup/
+    contents = File.open(filename, "r")     # Open for Nokogiri!
+    doc = Nokogiri::XML(contents)
+    contents.close
+	
+	type=""
+	title =  doc.css('mainbooktitle')
+	title = title.to_s.gsub(/\<\/mainbooktitle\>/, "")
+    title = title.to_s.gsub(/\<mainbooktitle\>/, "")
+	
+	if title.length == 0
+	  title1 =  doc.css('title')
+	  title2 = title1.to_s.split(/\>/)
+      title = title2[1]
+	  title = title.to_s.gsub(/\<\/title/, "")
+	end
+	
+	map =  doc.css('bookmap')
+	if map.length != 0 then
+	  type = "bookmap"
+	  color_select = "Aquamarine"
+	else 
+	  map =  doc.css('map')
+	  type = "topicmap"
+	  color_select = "LightSkyBlue"
+	end
+	map = map.to_s.gsub(/\<\//, "")
+	map = map.to_s.gsub(/\>/, "")
+    map = map.to_s.gsub(/\</, "")
+	map = map.to_s.gsub(/\"\//, "\"")
+	
+	if filename =~/.xml/
+	    type = ""
+		color_select = ""
+		tcount = doc.css('concept')
+		type =  "concept" if tcount.length > 0
+		color_select = "lightgreen" if tcount.length > 0
+			 
+		tcount = doc.css('reference')
+		type =  "reference" if tcount.length > 0
+		color_select = "lightpink" if tcount.length > 0
+			 
+		tcount = doc.css('task')
+		type =  "task" if tcount.length > 0
+		color_select = "LemonChiffon" if tcount.length > 0
+			 
+		tcount = doc.css('topic')
+		type =  "topic" if tcount.length > 0
+		color_select = "orange" if tcount.length > 0
+	end
+	  
+  %>
+    
+	<tr >
+	 <td class="withborder" valign=top width="30%"><a href=<%= filename %>> <%= filename %> </a></td> 
+	 <td class="withborder" valign=top width="40%"><%= title %></td>
+	 <td class="withborder" valign=top width="10%" style="background-color:<%= color_select %>"><%= type %></td>
+	 <td class="withborder" valign=top width="20%"><%= File.mtime(filename) %></td>
+	</tr>
+
+<%		
+   end 
+end 
+%>
+</table>
+<%  Dir.chdir(the_filepath + "/..") %>

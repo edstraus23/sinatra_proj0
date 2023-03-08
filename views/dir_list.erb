@@ -1,0 +1,123 @@
+ <p>Choose .ditamap file to change directory:</p> <form action="/dir_list" method="post">
+ <input type="file" name="directory"> 
+ <input type="submit">
+ </form>
+
+ <% 
+require 'nokogiri'
+require 'htmlentities'
+
+ 
+ sdir = @directory.to_s.split(/\\/)
+ @directory = @directory.to_s.gsub(/\\#{sdir.last}/, "")
+ @directory = @directory.to_s.gsub(/\\/, "/")
+ %>
+
+<table>
+<th class="withborder" >Topic/Map</th><th class="withborder" >Name</th><th class="withborder" >Type</th><th class="withborder">Date</th>
+ 
+
+<% 
+@directory="v:/extract" if @directory.length == 0
+%>
+<p>Current directory: <%= @directory %></p>
+<%
+the_filepath = File.expand_path(File.dirname(__FILE__))
+Dir.chdir(@directory)
+arr = Dir.glob("#{@directory}/*.ditamap").sort_by{|f| File.stat(f).mtime}.reverse 
+for filename in arr 
+  if filename !~/backup/
+    contents = File.open(filename, "r")     # Open for Nokogiri!
+    doc = Nokogiri::XML(contents)
+    contents.close
+	
+	type=""
+	title =  doc.css('mainbooktitle')
+	title = title.to_s.gsub(/\<\/mainbooktitle\>/, "")
+    title = title.to_s.gsub(/\<mainbooktitle\>/, "")
+	
+	if title.length == 0
+	  title1 =  doc.css('title')
+	  title2 = title1.to_s.split(/\>/)
+      title = title2[1]
+	  title = title.to_s.gsub(/\<\/title/, "")
+	end
+	
+	map =  doc.css('bookmap')
+	if map.length != 0 then
+	  type = "bookmap"
+	  color_select = "Aquamarine"
+	else 
+	  map =  doc.css('map')
+	  type = "topicmap"
+	  color_select = "LightSkyBlue"
+	end
+	map = map.to_s.gsub(/\<\//, "")
+	map = map.to_s.gsub(/\>/, "")
+    map = map.to_s.gsub(/\</, "")
+	map = map.to_s.gsub(/\"\//, "\"")
+	  
+  %>
+    
+	<tr style="background-color:<%= color_select %>">
+	 <td class="withborder" valign=top width="30%"><a href=<%= filename %>> <%= filename %> </a></td> 
+	 <td class="withborder" valign=top width="40%"><%= title %></td>
+	 <td class="withborder" valign=top width="10%"><%= type %></td>
+	 <td class="withborder" valign=top width="20%"><%= File.mtime(filename) %></td>
+	</tr>
+<%
+     topics = map.to_s.split(/\"/)
+	   for topic in topics
+	     if (topic =~/\.xml/ || topic =~/\.ditamap/) then
+		   ttitle = "File Not Found"
+		   if File.exist?(topic) then
+		     contents1 = File.open(@directory.chomp + "/" + topic.chomp, "r")     # Open for Nokogiri!
+             doc1 = Nokogiri::XML(contents1)
+             contents1.close
+		     ttitle1 =  doc1.css('title')
+	         ttitle1 = ttitle1.to_s.gsub(/\<\/ph\>/, "")
+			 ttitle1 = ttitle1.to_s.gsub(/<ph.+?\"\>/, "")
+			 ttitle2 = ttitle1.to_s.split(/\>/)
+             ttitle = ttitle2[1]
+			 ttitle = ttitle.to_s.gsub(/\<\/title/, "")
+			 
+			 
+			 ttype = ""
+			 color_select = ""
+			 tcount = doc1.css('concept')
+			 ttype =  "concept" if tcount.length > 0
+			 color_select = "lightgreen" if tcount.length > 0
+			 
+			 tcount = doc1.css('reference')
+			 ttype =  "reference" if tcount.length > 0
+			 color_select = "lightpink" if tcount.length > 0
+			 
+			 tcount = doc1.css('task')
+			 ttype =  "task" if tcount.length > 0
+			 color_select = "LemonChiffon" if tcount.length > 0
+			 
+			 tcount = doc1.css('topic')
+			 ttype =  "topic" if tcount.length > 0
+			 color_select = "orange" if tcount.length > 0
+			 
+			 tcount = doc1.css('map')
+			 ttype =  "topicmap" if tcount.length > 0
+			 color_select = "LightSkyBlue" if tcount.length > 0
+			 
+		   end
+%>
+	 <tr >
+	 <td class="withborder" valign=top>&nbsp;&nbsp;&nbsp;<%= @directory.chomp %>/<%= topic %></td> 
+	 <td class="withborder" valign=top><%= ttitle %></td>
+	 <td class="withborder" valign=top style="background-color:<%= color_select %>"><%= ttype %>  </td>
+	 <td class="withborder" valign=top><%= File.mtime(filename) %></td>
+	</tr>
+<%	     
+          end
+		end
+		
+   end 
+end 
+%>
+</table>
+<%  Dir.chdir(the_filepath + "/..") %>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<%
+require 'sinatra'
+require 'nokogiri'
+require 'htmlentities'
+require 'data_mapper'
+
+%>
+
+<h2>Demo | v.1.4.0</h2>
+
+<p>Write the following to the DITA database.</p>
+
+<p><%= @title %> </p>
+<p><%= @form_name %> </p>
+<p><%= @text1 %> </p>
+<p><%= @text2 %> </p>
+<p><%= @text3 %> </p>
+<p><%= @text4 %> </p>
+<p><%= @text5 %>  </p>
+<p><%= @file1 %>  </p>
+<p><%= @file2 %>  </p>
+<p><%= @content %>  </p>
+
+<p><a href="/">Go to home page</a></p>
+
+
+
+<%
+
+
+#@sinatra_dir="/home/eric/sinatra_md1"
+#@ditaot_dir="/home/eric/dita-ot-3.0.1"
+#@java_dir="/usr/lib/jdk1.7.0_45"
+
+#updated_at=Time.now
+#Dita.update(:id => #{@id_val}, :title => '#{@title}', :form_name => '#{@form_name}', :short_desc => '#{@short_desc}', :category1 => '#{@category1}', :category2 => '#{@category2}', :text1 => '#{@text1}', :text1n => '#{@text1n}', :text2 => '#{@text2}', :text1n => '#{@text2n}', :text3 => '#{@text3}', :text3n => '#{@text3n}', :text4 => '#{@text4}', :text4n => '#{@text4n}', :text5 => '#{@text5}', :text5n => '#{@text5n}', :content => '#{@content}', :file1 => '#{@file1}', :file1n => '#{@file1n}',:file2 => '#{@file2}', :file2n => '#{@file2n}', :updated_at => '#{updated_at}')
+#Dita.update(:id => #{@id_val})
+   
+    @n1.id = @id_val
+    @n1.title = @title
+    @n1.form_name = @form_name
+    @n1.short_desc = @short_desc
+   @n1.category1  = @category1
+    @n1.category2  = @category2
+    @n1.text1  = @text1
+    @n1.text1n = @text1n
+    @n1.text2  = @text2
+    @n1.text2n = @text2n
+    @n1.text3  = @text3
+    @n1.text3n = @text3n
+    @n1.text4  = @text4
+    @n1.text4n = @text4n
+    @n1.text5  = @text5
+    @n1.text5n = @text5n
+	@n1.content = @content
+	@n1.file1  = @file1
+    @n1.file1n = @file1n
+    @n1.file2  = @file2
+    @n1.file2n = @file2n
+	@n1.created_at = Time.now
+	@n1.updated_at = Time.now
+	@n1.save
+	
+	# Create a new file and write to it  
+	if @category1 =~/topicmap/
+	
+	aFile = File.new("#{@ditaot_dir}/samples/#{@form_name}.ditamap", "w")
+	
+        aFile.print "<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE map PUBLIC \"-//OASIS//DTD DITA Map//EN\" \"../dtd/technicalContent/dtd/map.dtd\" []>\n"
+    aFile.print "#{@content}\n"
+    aFile.close
+       elsif (@category1 =~/bookmap/)
+        aFile = File.new("#{@ditaot_dir}/samples/#{@form_name}.ditamap", "w")
+        # @content.gsub!(/\(/, "\<")
+       
+       aFile.print "<?xml version='1.0' encoding='utf-8'?><!DOCTYPE bookmap PUBLIC \"-//OASIS//DTD DITA BookMap//EN\" \"../dtd/bookmap/dtd/bookmap.dtd\">\n"
+    aFile.print "#{@content}\n"
+    aFile.close
+
+	else
+    aFile = File.new("#{@ditaot_dir}/samples/topics/#{@form_name}.md", "w")
+    aFile.print "\# #{@title}\n"
+    aFile.print "#{@content}\n"
+    # aFile.print "</body></html>"
+    aFile.close
+    end
+    
+   
+	
+	
+	#`#{@java_dir}/bin/java -jar #{@ditaot_dir}/lib/saxon/saxon9.jar #{@sinatra_dir}/public/htm/#{@form_name}.htm #{@ditaot_dir}/plugins/h2d/h2d.xsl infotype=topic > #{@ditaot_dir}/samples/topics/#{@form_name}.xml`
+
+
+	%>
+	
+	
+	

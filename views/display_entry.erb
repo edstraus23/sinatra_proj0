@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<%
+#@dita = Dita.all(:order => :id.desc)
+#id_val = 2
+@dita = Dita.all(:id => @id_val)
+@dita.each do |var|
+%>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="jQuery-TE_v.1.4.0/jquery-te-1.4.0.min.js" charset="utf-8"></script>
+
+  
+   <h3><%= var.title %></h3>
+   <p><%= var.short_desc %></p>
+   
+   <div id="menu" style="background-color:WhiteSmoke;width:675px;border:2px solid;border-radius:5px;font-size:12px;">
+   <h3><%= var.category1.capitalize %></h3>
+   <% if var.text1.length > 0 %><p><b><%= var.text1n %>:</b> <%= var.text1 %></p><% end %>
+   <% if var.text2.length > 0 %><p><b><%= var.text2n %>:</b> <%= var.text2 %></p><% end %>
+   <% if var.text3.length > 0 %><p><b><%= var.text3n %>:</b> <%= var.text3 %></p><% end %>
+   <% if var.text4.length > 0 %><p><b><%= var.text4n %>:</b> <%= var.text4 %></p><% end %>
+  <% if var.text5.length > 0 %> <p><b><%= var.text5n %>:</b> <%= var.text5 %></p><% end %>
+   <% if var.file1.length > 0 %> <p><b><%= var.file1n %>:</b> <%= var.file1 %></p><% end %>
+   <% if var.file2.length > 0 %> <p><b><%= var.file2n %>:</b> <%= var.file2 %></p><% end %>
+   <%= var.content %>
+   </div>
+   <!--
+  <form action="/form1_out" name="<%= var.form_name %>" method="post">
+ 
+
+ <table>  
+ <tr><td>Form name:</td><td><input type="text" name="form_name" value="<%= var.form_name %>_"/></td></tr>
+ <tr><td><%= var.text1 %></td><td><input type="text" name="<%= var.text1n %>" /></td></tr>
+ <tr><td><%= var.text2 %></td><td><input type="text" name="<%= var.text2n %>" /></td></tr>
+ <tr><td><%= var.text3 %></td><td><input type="text" name="<%= var.text3n %>" /></td></tr>
+ <tr><td><%= var.text4 %></td><td><input type="text" name="<%= var.text4n %>" /></td></tr>
+ <tr><td><%= var.text5 %></td><td><input type="text" name="<%= var.text5n %>" /></td></tr>
+ <tr><td><%= var.file1 %></td><td><input type="file" name="<%= var.file1n %>" /></td></tr>
+ <tr><td><%= var.file2 %></td><td><input type="file" name="<%= var.file2n %>" /></td></tr>
+ 
+ <tr><td>  Category 1:</td><td>
+<select name="category1" >
+  <option value="form">Form</option>
+  <option value="athlete">Favorite Atheletes</option>
+  <option value="movies">Favorite Movies</option>
+</select> 
+</td></tr>
+<tr><td>
+Category 2:</td><td>
+<select name="category2" >
+  <option value="inactive">Inactive</option>
+  <option value="front">Promote to front</option>
+</select>
+</td></tr>
+ </table>
+  
+  <!-- <textarea name="content" class="jqte-test"></span></u></b></textarea> -->
+ <!-- <textarea name="content" rows=4 cols=70></textarea>
+   <input type="submit" value="Submit">
+  
+   </form>
+  -->
+<%  
+end
+%>
+
+<br/>
+
+
+<script>
+	$('.jqte-test').jqte();
+	//$(".jqte-test").jqte({color: false});
+	// $(".jqte-test").jqte({b: true});
+	// $(".jqte-test").jqte({b: true});
+	//  $(".jqte-test").jqte({button: "SEND"});
+	
+	
+	// settings of status
+	var jqteStatus = true;
+	$(".status").click(function()
+	{
+		jqteStatus = jqteStatus ? false : true;
+		$('.jqte-test').jqte({"status" : jqteStatus})
+	});
+</script>
+
+<!------------------------------------------------------------ jQUERY TEXT EDITOR ------------------------------------------------------------>
+
+
+
+

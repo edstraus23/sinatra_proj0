@@ -1,0 +1,145 @@
+ <p>Choose .ditamap file to change directory:</p> <form action="/dir_list_file" method="post">
+ <input type="file" name="directory"> 
+ <input type="submit">
+ </form>
+
+ <% 
+require 'nokogiri'
+require 'htmlentities'
+
+ 
+ sdir = @directory.to_s.split(/\\/)
+ @directory = @directory.to_s.gsub(/\\#{sdir.last}/, "")
+ @directory = @directory.to_s.gsub(/\\/, "/")
+ %>
+<% @sort = params[:sort] %>
+<% @sort_order = params[:sort_order] %>
+
+
+<table>
+<th class="withborder" >Topic/Map 
+<a href="dir_list_type?sort=topic&amp;sort_order=asc">[asc]</a> 
+<a href="dir_list_type?sort=topic&amp;sort_order=dsc">[dsc]</a></th>
+<th class="withborder">Name
+<a href="dir_list_type?sort=title&amp;sort_order=asc">[asc]</a> 
+<a href="dir_list_type?sort=title&amp;sort_order=dsc">[dsc]</a></th>
+<th class="withborder" >Type
+<a href="dir_list_type?sort=type&amp;sort_order=asc">[asc]</a> 
+<a href="dir_list_type?sort=type&amp;sort_order=dsc">[dsc]</a></th>
+<th class="withborder">Date
+<a href="dir_list_type?sort=date&amp;sort_order=asc">[asc]</a> 
+<a href="dir_list_type?sort=date&amp;sort_order=dsc">[dsc]</a></th>
+ 
+<% 
+@directory="v:/extract" if @directory.length == 0
+%>
+<p>
+Current directory: <%= @directory %></p>
+<%
+arr1 = Array.new
+the_filepath = File.expand_path(File.dirname(__FILE__))
+Dir.chdir(@directory)
+arr = Dir.glob("#{@directory}/*.[x,d][m,i][l,t]*").sort_by{|f| File.stat(f).mtime}.reverse 
+for filename in arr 
+  if filename !~/backup/
+    contents = File.open(filename, "r")     # Open for Nokogiri!
+    doc = Nokogiri::XML(contents)
+    contents.close
+	
+	type=""
+	title =  doc.css('mainbooktitle')
+	title = title.to_s.gsub(/\<\/mainbooktitle\>/, "")
+    title = title.to_s.gsub(/\<mainbooktitle\>/, "")
+	
+	if title.length == 0
+	  title1 =  doc.css('title')
+	  title1 = title1.to_s.gsub(/\<\/ph\>/, "")
+	  title1 = title1.to_s.gsub(/<ph.+?\"\>/, "")
+	  title1 = title1.to_s.gsub(/\<\/sup\>/, "")
+	  title1 = title1.to_s.gsub(/\<sup\>/, "")
+	  title2 = title1.to_s.split(/\>/)
+      title = title2[1]
+	  title = title.to_s.gsub(/\<\/title/, "")
+	end
+	
+	map =  doc.css('bookmap')
+	if map.length != 0 then
+	  type = "bookmap"
+	  color_select = "Aquamarine"
+	else 
+	  map =  doc.css('map')
+	  type = "topicmap"
+	  color_select = "LightSkyBlue"
+	end
+	map = map.to_s.gsub(/\<\//, "")
+	map = map.to_s.gsub(/\>/, "")
+    map = map.to_s.gsub(/\</, "")
+	map = map.to_s.gsub(/\"\//, "\"")
+	
+	if filename =~/.xml/
+	    type = ""
+		color_select = ""
+		tcount = doc.css('concept')
+		type =  "concept" if tcount.length > 0
+		color_select = "lightgreen" if tcount.length > 0
+			 
+		tcount = doc.css('reference')
+		type =  "reference" if tcount.length > 0
+		color_select = "lightpink" if tcount.length > 0
+			 
+		tcount = doc.css('task')
+		type =  "task" if tcount.length > 0
+		color_select = "LemonChiffon" if tcount.length > 0
+			 
+		tcount = doc.css('topic')
+		type =  "topic" if tcount.length > 0
+		color_select = "orange" if tcount.length > 0
+	end
+	  
+     if @sort =~/type/ 
+      arr1.push("#{type}||#{filename}||#{title}||#{type}||#{File.mtime(filename)}||#{color_select}") 
+	 elsif @sort =~/topic/
+	  arr1.push("#{filename}||#{filename}||#{title}||#{type}||#{File.mtime(filename)}||#{color_select}")
+	 elsif @sort =~/title/
+	  arr1.push("#{title}||#{filename}||#{title}||#{type}||#{File.mtime(filename)}||#{color_select}")
+	 elsif @sort =~/date/
+	  arr1.push("#File.mtime{filename}||#{filename}||#{title}||#{type}||#{File.mtime(filename)}||#{color_select}")
+	  else
+	  arr1.push("#File.mtime{filename}||#{filename}||#{title}||#{type}||#{File.mtime(filename)}||#{color_select}")
+	 end
+   end 
+end 
+
+if @sort =~/type/ || @sort =~/topic/ || @sort =~/title/
+  if @sort_order =~/dsc/
+    arr1 = arr1.sort.reverse
+  else
+    arr1 = arr1.sort
+  end
+else # for date
+  if @sort_order =~/dsc/
+    arr1 = arr1
+  else
+    arr1 = arr1.reverse
+  end
+end
+
+ for item in arr1
+  (sort1,filename1,title1,type1,date1,color_select1) = item.to_s.split(/\|\|/)
+%>
+
+<tr >
+	 <td class="withborder" valign=top width="30%"><a href=<%= filename %>> <%= filename1 %> </a></td> 
+	 <td class="withborder" valign=top width="40%"><%= title1 %></td>
+	 <td class="withborder" valign=top width="10%" style="background-color:<%= color_select1 %>"><%= type1 %></td>
+	 <td class="withborder" valign=top width="20%"><%= date1 %></td>
+	</tr>
+
+<% 
+ end
+
+%>
+</table>
+<%
+Dir.chdir(the_filepath + "/..") 
+%>

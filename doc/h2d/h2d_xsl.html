@@ -1,0 +1,2270 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>h2d.xsl - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+  var index_rel_prefix = "../";
+</script>
+
+<script src="../js/navigation.js" defer></script>
+<script src="../js/search.js" defer></script>
+<script src="../js/search_index.js" defer></script>
+<script src="../js/searcher.js" defer></script>
+<script src="../js/darkfish.js" defer></script>
+
+<link href="../css/fonts.css" rel="stylesheet">
+<link href="../css/rdoc.css" rel="stylesheet">
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../table_of_contents.html#pages">Pages</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    
+<div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+    <li><a href="../h2d/build_xml.html">build.xml</a>
+    <li><a href="../h2d/catalog_xml.html">catalog.xml</a>
+    <li><a href="../h2d/dtd/xhtml-lat1_ent.html">xhtml-lat1.ent</a>
+    <li><a href="../h2d/dtd/xhtml-special_ent.html">xhtml-special.ent</a>
+    <li><a href="../h2d/dtd/xhtml-symbol_ent.html">xhtml-symbol.ent</a>
+    <li><a href="../h2d/dtd/xhtml1-frameset_dtd.html">xhtml1-frameset.dtd</a>
+    <li><a href="../h2d/dtd/xhtml1-strict_dtd.html">xhtml1-strict.dtd</a>
+    <li><a href="../h2d/dtd/xhtml1-transitional_dtd.html">xhtml1-transitional.dtd</a>
+    <li><a href="../h2d/h2d_xsl.html">h2d.xsl</a>
+    <li><a href="../h2d/plugin_xml.html">plugin.xml</a>
+    <li><a href="../h2d/preprocess_xsl.html">preprocess.xsl</a>
+    <li><a href="../h2d/samples/concept_html.html">concept.html</a>
+    <li><a href="../h2d/samples/content_html.html">content.html</a>
+    <li><a href="../h2d/samples/reference_html.html">reference.html</a>
+    <li><a href="../h2d/samples/task_html.html">task.html</a>
+    <li><a href="../h2d/samples/topic_html.html">topic.html</a>
+    <li><a href="../log_txt.html">log</a>
+    <li><a href="../public/Test3_sh.html">Test3.sh</a>
+    <li><a href="../public/about_html.html">about.html</a>
+    <li><a href="../public/dtest_html.html">dtest.html</a>
+    <li><a href="../public/foo_html.html">foo.html</a>
+    <li><a href="../public/help_html.html">help.html</a>
+    <li><a href="../public/htm/Great_silly_movie_htm.html">Great_silly_movie.htm</a>
+    <li><a href="../public/htm/Movies_stepb_htm.html">Movies_stepb.htm</a>
+    <li><a href="../public/htm/athlete_htm.html">athlete.htm</a>
+    <li><a href="../public/htm/athlete_chase_htm.html">athlete_chase.htm</a>
+    <li><a href="../public/htm/athlete_jrol_htm.html">athlete_jrol.htm</a>
+    <li><a href="../public/htm/baseball_htm.html">baseball.htm</a>
+    <li><a href="../public/htm/baseball_schmidt_htm.html">baseball_schmidt.htm</a>
+    <li><a href="../public/htm/baseball_schmidt_md_htm.html">baseball_schmidt_md.htm</a>
+    <li><a href="../public/htm/bookmap_htm.html">bookmap.htm</a>
+    <li><a href="../public/htm/cm_htm.html">cm.htm</a>
+    <li><a href="../public/htm/cm_DITA_OT_htm.html">cm_DITA_OT.htm</a>
+    <li><a href="../public/htm/cm_TE_htm.html">cm_TE.htm</a>
+    <li><a href="../public/htm/cm_bookmap_html_htm.html">cm_bookmap_html.htm</a>
+    <li><a href="../public/htm/cm_create_entries_htm.html">cm_create_entries.htm</a>
+    <li><a href="../public/htm/cm_create_entries_md_htm.html">cm_create_entries_md.htm</a>
+    <li><a href="../public/htm/cm_create_entry_md_htm.html">cm_create_entry_md.htm</a>
+    <li><a href="../public/htm/cm_create_form_htm.html">cm_create_form.htm</a>
+    <li><a href="../public/htm/cm_create_map_html_htm.html">cm_create_map_html.htm</a>
+    <li><a href="../public/htm/cm_create_map_md_htm.html">cm_create_map_md.htm</a>
+    <li><a href="../public/htm/cm_create_maps_htm.html">cm_create_maps.htm</a>
+    <li><a href="../public/htm/cm_datamapper_htm.html">cm_datamapper.htm</a>
+    <li><a href="../public/htm/cm_display_set_of_data_htm.html">cm_display_set_of_data.htm</a>
+    <li><a href="../public/htm/cm_feature_htm.html">cm_feature.htm</a>
+    <li><a href="../public/htm/cm_html_snip_htm.html">cm_html_snip.htm</a>
+    <li><a href="../public/htm/cm_install_htm.html">cm_install.htm</a>
+    <li><a href="../public/htm/cm_intro_htm.html">cm_intro.htm</a>
+    <li><a href="../public/htm/cm_md_snip_htm.html">cm_md_snip.htm</a>
+    <li><a href="../public/htm/cm_required_software_htm.html">cm_required_software.htm</a>
+    <li><a href="../public/htm/cm_ruby_htm.html">cm_ruby.htm</a>
+    <li><a href="../public/htm/cm_run_dita_3_0_htm.html">cm_run_dita_3_0.htm</a>
+    <li><a href="../public/htm/cm_run_swcms_htm.html">cm_run_swcms.htm</a>
+    <li><a href="../public/htm/cm_set_variables_htm.html">cm_set_variables.htm</a>
+    <li><a href="../public/htm/cm_setting_menus_htm.html">cm_setting_menus.htm</a>
+    <li><a href="../public/htm/cm_setup_htm.html">cm_setup.htm</a>
+    <li><a href="../public/htm/cm_sinatra_htm.html">cm_sinatra.htm</a>
+    <li><a href="../public/htm/images_htm.html">images.htm</a>
+    <li><a href="../public/htm/images_Daffodil001_htm.html">images_Daffodil001.htm</a>
+    <li><a href="../public/htm/images_chase_htm.html">images_chase.htm</a>
+    <li><a href="../public/htm/images_cindy_htm.html">images_cindy.htm</a>
+    <li><a href="../public/htm/images_home_htm.html">images_home.htm</a>
+    <li><a href="../public/htm/images_jimmy_rollins_htm.html">images_jimmy_rollins.htm</a>
+    <li><a href="../public/htm/images_step_bros_htm.html">images_step_bros.htm</a>
+    <li><a href="../public/htm/images_test123_htm.html">images_test123.htm</a>
+    <li><a href="../public/htm/misc_htm.html">misc.htm</a>
+    <li><a href="../public/htm/misc_dita_app_htm.html">misc_dita_app.htm</a>
+    <li><a href="../public/htm/misc_event_htm.html">misc_event.htm</a>
+    <li><a href="../public/htm/misc_forward_htm.html">misc_forward.htm</a>
+    <li><a href="../public/htm/misc_h2d_htm.html">misc_h2d.htm</a>
+    <li><a href="../public/htm/misc_random_th_08_01_14_htm.html">misc_random_th_08_01_14.htm</a>
+    <li><a href="../public/htm/misc_run_ant_htm.html">misc_run_ant.htm</a>
+    <li><a href="../public/htm/movies_htm.html">movies.htm</a>
+    <li><a href="../public/htm/movies_old_school_htm.html">movies_old_school.htm</a>
+    <li><a href="../public/htm/recent_movies_htm.html">recent_movies.htm</a>
+    <li><a href="../public/htm/recent_movies__htm.html">recent_movies_.htm</a>
+    <li><a href="../public/htm/recent_movies_her_htm.html">recent_movies_her.htm</a>
+    <li><a href="../public/htm/recent_movies_mudd_htm.html">recent_movies_mudd.htm</a>
+    <li><a href="../public/htm/recent_movies_paranoia_htm.html">recent_movies_paranoia.htm</a>
+    <li><a href="../public/htm/sports_events_htm.html">sports_events.htm</a>
+    <li><a href="../public/htm/sports_events__htm.html">sports_events_.htm</a>
+    <li><a href="../public/htm/sports_events_2001_htm.html">sports_events_2001.htm</a>
+    <li><a href="../public/htm/sports_events_2007_ditamap.html">sports_events_2007.ditamap</a>
+    <li><a href="../public/htm/sports_events_2007_htm.html">sports_events_2007.htm</a>
+    <li><a href="../public/htm/sports_events_2009_htm.html">sports_events_2009.htm</a>
+    <li><a href="../public/htm/sports_events_2010_htm.html">sports_events_2010.htm</a>
+    <li><a href="../public/htm/sports_events_2011_htm.html">sports_events_2011.htm</a>
+    <li><a href="../public/htm/sports_events_2013_htm.html">sports_events_2013.htm</a>
+    <li><a href="../public/htm/sports_events_2014_htm.html">sports_events_2014.htm</a>
+    <li><a href="../public/htm/sports_events_2018_htm.html">sports_events_2018.htm</a>
+    <li><a href="../public/htm/table_test_htm.html">table_test.htm</a>
+    <li><a href="../public/htm/test_htm.html">test.htm</a>
+    <li><a href="../public/htm/topic_map_ditamap.html">topic_map.ditamap</a>
+    <li><a href="../public/htm/topic_map_htm.html">topic_map.htm</a>
+    <li><a href="../public/htm/topic_map_athletes_ditamap.html">topic_map_athletes.ditamap</a>
+    <li><a href="../public/htm/topic_map_cms_htm.html">topic_map_cms.htm</a>
+    <li><a href="../public/htm/topic_map_test_htm.html">topic_map_test.htm</a>
+    <li><a href="../public/htm/topic_map_test_1_ditamap.html">topic_map_test_1.ditamap</a>
+    <li><a href="../public/jQuery-TE_v_1_4_0/demo/demo_css.html">demo.css</a>
+    <li><a href="../public/jQuery-TE_v_1_4_0/demo/demo_html.html">demo.html</a>
+    <li><a href="../public/jQuery-TE_v_1_4_0/jquery-te-1_4_0_css.html">jquery-te-1.4.0.css</a>
+    <li><a href="../public/jQuery-TE_v_1_4_0/jquery-te-1_4_0_min_js.html">jquery-te-1.4.0.min.js</a>
+    <li><a href="../public/jQuery-TE_v_1_4_0/license/AUTHOR_txt.html">AUTHOR</a>
+    <li><a href="../public/jQuery-TE_v_1_4_0/license/MIT-LICENSE_txt.html">MIT-LICENSE</a>
+    <li><a href="../public/jQuery-TE_v_1_4_0/uncompressed/jquery-te-1_4_0_js.html">jquery-te-1.4.0.js</a>
+    <li><a href="../public/jss/JSS-masterindex_js.html">JSS-masterindex.js</a>
+    <li><a href="../public/jss/jss-front_html.html">jss-front.html</a>
+    <li><a href="../public/jss/jss-hittemplate_js.html">jss-hittemplate.js</a>
+    <li><a href="../public/jss/jss-index_html.html">jss-index.html</a>
+    <li><a href="../public/jss/jss-info_html.html">jss-info.html</a>
+    <li><a href="../public/jss/jss-search_html.html">jss-search.html</a>
+    <li><a href="../public/tocjs/commonltr_css.html">commonltr.css</a>
+    <li><a href="../public/tocjs/commonrtl_css.html">commonrtl.css</a>
+    <li><a href="../public/tocjs/css/check/tree_css.html">tree.css</a>
+    <li><a href="../public/tocjs/css/code_css.html">code.css</a>
+    <li><a href="../public/tocjs/css/default/tree_css.html">tree.css</a>
+    <li><a href="../public/tocjs/css/folders/tree_css.html">tree.css</a>
+    <li><a href="../public/tocjs/css/local/tree_css.html">tree.css</a>
+    <li><a href="../public/tocjs/css/menu/tree_css.html">tree.css</a>
+    <li><a href="../public/tocjs/css/screen_css.html">screen.css</a>
+    <li><a href="../public/tocjs/event_js.html">event.js</a>
+    <li><a href="../public/tocjs/tocnav_html.html">tocnav.html</a>
+    <li><a href="../public/tocjs/toctree_js.html">toctree.js</a>
+    <li><a href="../public/tocjs/topic_map_cms_html.html">topic_map_cms.html</a>
+    <li><a href="../public/tocjs/topics/cm_create_entries_html.html">cm_create_entries.html</a>
+    <li><a href="../public/tocjs/topics/cm_create_form_html.html">cm_create_form.html</a>
+    <li><a href="../public/tocjs/topics/cm_display_set_of_data_html.html">cm_display_set_of_data.html</a>
+    <li><a href="../public/tocjs/topics/cm_run_dita_3_0_html.html">cm_run_dita_3_0.html</a>
+    <li><a href="../public/tocjs/topics/cm_run_swcms_html.html">cm_run_swcms.html</a>
+    <li><a href="../public/tocjs/topics/cm_set_variables_html.html">cm_set_variables.html</a>
+    <li><a href="../public/tocjs/topics/cm_setup_html.html">cm_setup.html</a>
+    <li><a href="../public/tocjs/topics/cm_usage_html.html">cm_usage.html</a>
+    <li><a href="../public/tocjs/treeview_js.html">treeview.js</a>
+    <li><a href="../public/tocjs/yahoo_js.html">yahoo.js</a>
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page h2d/h2d.xsl">
+
+<p>&lt;?xml version=“1.0” encoding=“utf-8”?&gt; &lt;!– This file is part of the DITA Open Toolkit project hosted on </p>
+
+<pre>Sourceforge.net. See the accompanying license.txt file for 
+applicable licenses.--&gt;</pre>
+
+<p>&lt;!–  <a href="h2d_xsl.html">h2d.xsl</a> </p>
+
+<pre>| Migrate XHTML content into DITA topics
+|
+| (C) Copyright IBM Corporation 2001, 2002, 2003, 2004, 2005, 2006. All Rights Reserved.
++
+| Udates:
+| 2002/06/11 DRD: changed BR trap from PI to comment
+| 2003/02/13 DRD: removed xhtml: namespace prefix baggage (use tidy&#39;s -doctype omit)
+|                 added support for text nodes in task content pulls
+|                 added renaming of related-links extensions to &quot;.dita&quot; instead of &quot;.htm(l)&quot;
+|                 if any name/content metas (except generators), open a prolog and populate metadata
+| 2003/03/27 DRD: extended meta trap to include &quot;GENERATOR&quot; (uc)
+|                 added default xml:lang=&quot;en-us&quot;
+|                 added genidattribute to provide single place to generate topic id (needs work)
+| 2003/03/28 RDA: Place &lt;title&gt; into &lt;searchtitle&gt; instead of &lt;shortdesc&gt;
+|                 Do not create an XREF for &lt;a&gt; without @href
+|                 Only create &quot;Collected links&quot; when links exist
+|                 Do not add links to &quot;Collected links&quot; if they are within this file
+|                 Add support for @format, @scope, and &lt;desc&gt; inside link
+|                 Add variables to check for first heading level, to make sections later 
+| 2003/04/04 RDA: Add FILENAME parameter to determine more unique file IDs
+| 2003/04/05 RDA: Add support for multi-column tables, and for spanned rows (not yet spanned columns)
+| 2003/05/07 RDA: Add support for thead, tbody, and caption within tables
+| 2003/07/17 RDA: Allow underscores to appear in the topic ID, also period and dash if not
+|                              the first character
+| 2003/08/21 RDA: Allow spanned columns within tables
+|                 Allow single paragraphs in table entries, to ignore the &lt;p&gt; tag
+| 2003/10/07 RDA: Process span classes that were moved by tidy (like class=c1)
+| 2003/10/13 RDA: Pre-process the HTML, if it contains lists that stop and start
+| 2004/10/13 RDA: Pass through @compact, plus table/row attributes
+|                 If a link starts with http:, https:, or ftp:, do not change extension
+| 2004/11/22 RDA: Update to pass through comments
+| 2005/01/08 RDA: Revised for external publication
+| 2006/01/04 RDA: Added various bug fixes, mostly for tables and class attributes
+|                 Updated public IDs to use the OASIS standard
++--&gt;</pre>
+
+<p>&lt;!– If you wish to set the doctype manually, you will need to comment out the</p>
+
+<pre>following 5 lines, and uncomment the xsl:stylesheet lines below. See the 
+comments before that section for details. --&gt;</pre>
+
+<p>&lt;!–&lt;xsl:stylesheet version=“1.0” </p>
+
+<pre>xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;</pre>
+
+<p>&gt; &lt;xsl:output method=“xml” indent=“no” encoding=“utf-8” /&gt; &lt;xsl:param name=“infotype”&gt;topic&lt;/xsl:param&gt;–&gt;</p>
+
+<p>&lt;!– If you wish to set the doctype dynamically, you will need to uncomment</p>
+
+<pre>the following section. The section sets the XSLT version as 1.1, which
+allows some engines to use variables for system and public IDs.
+Those variables are set here based on the infotype parameter, or they
+can be passed in directly from the command line. --&gt;</pre>
+
+<p>&lt;xsl:stylesheet version=“1.1” </p>
+
+<pre>xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;
+xmlns:saxon=&quot;http://icl.com/saxon&quot;
+extension-element-prefixes=&quot;saxon&quot;&gt;</pre>
+
+<p>&lt;xsl:param name=“infotype”&gt;topic&lt;/xsl:param&gt; &lt;xsl:variable name=“systemid”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+    &lt;xsl:when test=&quot;$infotype=&#39;concept&#39;&quot;&gt;../dtd/concept.dtd&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;$infotype=&#39;task&#39;&quot;&gt;../dtd/task.dtd&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;$infotype=&#39;reference&#39;&quot;&gt;../dtd/reference.dtd&lt;/xsl:when&gt;
+    &lt;xsl:otherwise&gt;../dtd/topic.dtd&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:variable&gt; &lt;xsl:variable name=“publicid”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+    &lt;xsl:when test=&quot;$infotype=&#39;concept&#39;&quot;&gt;-//OASIS//DTD DITA Concept//EN&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;$infotype=&#39;task&#39;&quot;&gt;-//OASIS//DTD DITA Task//EN&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;$infotype=&#39;reference&#39;&quot;&gt;-//OASIS//DTD DITA Reference//EN&lt;/xsl:when&gt;
+    &lt;xsl:otherwise&gt;-//OASIS//DTD DITA Topic//EN&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:variable&gt; &lt;!– &lt;xsl:output method=“xml” indent=“no” encoding=“utf-8” </p>
+
+<pre>   doctype-system=&quot;{$systemid}&quot; doctype-public=&quot;{$publicid}&quot; /&gt;
+--&gt;
+
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;no&quot; encoding=&quot;utf-8&quot; 
+   doctype-system=&quot;../../dtd/technicalContent/dtd/topic.dtd&quot; doctype-public=&quot;-//OASIS//DTD DITA Topic//EN&quot; /&gt;</pre>
+
+<p>&lt;!– ========== PARAMETERS ============== –&gt;</p>
+
+<p>&lt;!– what kind of topic to generate?  set up default of &#39;topic&#39; but allow external override –&gt; &lt;!– sample call: </p>
+
+<pre>   saxon tasktest.html h2d.xsl infotype=task &gt; tasktest.dita
+--&gt;</pre>
+
+<p>&lt;!– What extension should be used for links that go to other DITA topics?</p>
+
+<pre>Assumption is that local HTML targets will be converted to DITA. --&gt;</pre>
+
+<p>&lt;xsl:param name=“dita-extension”&gt;.dita&lt;/xsl:param&gt;</p>
+
+<p>&lt;!– Create a parameter for the defualt language –&gt; &lt;xsl:param name=“default-lang”&gt;en-us&lt;/xsl:param&gt;</p>
+
+<p>&lt;!– Take the filename as an input parameter to determine the main topic&#39;s ID –&gt; &lt;xsl:param name=“FILENAME”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+    &lt;xsl:when test=&quot;$infotype=&#39;concept&#39; or $infotype=&#39;reference&#39; or $infotype=&#39;task&#39; or $infotype=&#39;topic&#39;&quot;&gt;
+        &lt;xsl:value-of select=&quot;$infotype&quot;/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:otherwise&gt;
+        &lt;xsl:value-of select=&quot;&#39;topic&#39;&quot;/&gt;
+    &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;
+&lt;xsl:value-of select=&quot;string-length()&quot;/&gt;
+&lt;xsl:value-of select=&quot;&#39;.htm&#39;&quot;/&gt;</pre>
+
+<p>&lt;/xsl:param&gt;</p>
+
+<p>&lt;!– Use the FILENAME to determine the ID for the output topic. Invalid ID characters</p>
+
+<pre>must be removed (replaced with generic D character). If a filename starts with
+a number, which cannot start an ID, all numbers will be replaced with letters. --&gt;</pre>
+
+<p>&lt;xsl:variable name=“filename-id”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;starts-with($FILENAME,&#39;0&#39;) or starts-with($FILENAME,&#39;1&#39;) or
+                  starts-with($FILENAME,&#39;2&#39;) or starts-with($FILENAME,&#39;3&#39;) or
+                  starts-with($FILENAME,&#39;4&#39;) or starts-with($FILENAME,&#39;5&#39;) or
+                  starts-with($FILENAME,&#39;6&#39;) or starts-with($FILENAME,&#39;7&#39;) or
+                  starts-with($FILENAME,&#39;8&#39;) or starts-with($FILENAME,&#39;9&#39;) or
+                  starts-with($FILENAME,&#39;.&#39;) or starts-with($FILENAME,&#39;-&#39;)&quot;&gt;
+    &lt;xsl:value-of select=&quot;translate(substring-before($FILENAME,&#39;.htm&#39;),
+                                    &#39;0123456789.-,!@#$%^()=+[]{}/\;&amp;amp;&#39;,
+                                    &#39;ABCDEFGHIJDDDDDDDDDDDDDDDDDDDDDD&#39;)&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;xsl:value-of select=&quot;translate(substring-before($FILENAME,&#39;.htm&#39;),
+                                    &#39;,!@#$%^()=+[]{}/\;&amp;amp;&#39;,
+                                    &#39;DDDDDDDDDDDDDDDDDDDDDD&#39;)&quot;/&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:variable&gt;</p>
+
+<p>&lt;!– eliminate whitespace in body as a migration concern –&gt; &lt;xsl:strip-space elements=“body”/&gt;</p>
+
+<p>&lt;!– RDA: use the 2 variables below, instead of the 6 starter files –&gt; &lt;xsl:variable name=“main-head-level”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;/html/body/descendant::h1[1][not(preceding::h2|preceding::h3|preceding::h4|preceding::h5|preceding::h6)]&quot;&gt;h1&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;/html/body/descendant::h2[1][not(preceding::h3|preceding::h4|preceding::h5|preceding::h6)]&quot;&gt;h2&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;/html/body/descendant::h3[1][not(preceding::h4|preceding::h5|preceding::h6)]&quot;&gt;h3&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;/html/body/descendant::h4[1][not(preceding::h5|preceding::h6)]&quot;&gt;h4&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;/html/body/descendant::h5[1][not(preceding::h6)]&quot;&gt;h5&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;/html/body/descendant::h6[1]&quot;&gt;h6&lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;h1&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:variable&gt;</p>
+
+<p>&lt;xsl:template name=“output-message”&gt;</p>
+
+<pre>&lt;xsl:param name=&quot;msg&quot; select=&quot;***&quot;/&gt;
+&lt;xsl:message&gt;&lt;xsl:value-of select=&quot;$msg&quot;/&gt;&lt;/xsl:message&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– if needed, add the dita wrapper here –&gt; &lt;xsl:template match=“/”&gt;</p>
+
+<pre>&lt;xsl:call-template name=&quot;validate-parameters&quot;/&gt;</pre>
+
+<p>&lt;!– Some HTML editors store ordered lists as sequential lists, with all but the first</p>
+
+<pre>   using @start to resume numbering. If a topic uses this, the lists will be pulled together.
+   They are placed in a variable that contains a cleaned up version of the original HTML. The
+   standard templates are then used to format the modified HTML. Templates for pre-processing
+   the HTML Are all at the bottom of the file.
+   If there are no lists with abnormal numbering, just start processing. --&gt;
+&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;not(//ol[@start])&quot;&gt;&lt;xsl:apply-templates select=&quot;*|comment()|text()|processing-instruction()&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;!-- Process the entire file. Most elements are copied straight into the variable; ordered
+         lists and elements between them are modified slightly. --&gt; 
+    &lt;xsl:variable name=&quot;shift-lists&quot;&gt;
+      &lt;xsl:apply-templates select=&quot;*|@*|comment()|processing-instruction()|text()&quot; mode=&quot;shift-lists&quot;/&gt;
+    &lt;/xsl:variable&gt;
+    &lt;!-- For some reason, if I do this without a mode, I get a Java overflow error. --&gt;
+    &lt;xsl:apply-templates select=&quot;html/preceding-sibling::comment()&quot;/&gt;
+    &lt;xsl:apply-templates select=&quot;$shift-lists&quot; mode=&quot;redirect&quot;/&gt;
+    &lt;xsl:apply-templates select=&quot;html/following-sibling::comment()&quot;/&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Process the HTML file that was placed in a variable using normal routines. –&gt; &lt;xsl:template match=“*” mode=“redirect”&gt;</p>
+
+<pre>&lt;xsl:apply-templates select=&quot;.&quot;/&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– general the overall topic container and pull content for it –&gt;</p>
+
+<p>&lt;xsl:template <a href="local-name()='html'">match=“*</a>”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;$infotype=&#39;topic&#39;&quot;&gt;&lt;xsl:call-template name=&quot;gen-topic&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$infotype=&#39;concept&#39;&quot;&gt;&lt;xsl:call-template name=&quot;gen-concept&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$infotype=&#39;task&#39;&quot;&gt;&lt;xsl:call-template name=&quot;gen-task&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$infotype=&#39;reference&#39;&quot;&gt;&lt;xsl:call-template name=&quot;gen-reference&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;&lt;xsl:call-template name=&quot;gen-topic&quot;/&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– named templates for various infotyped topic shells –&gt;</p>
+
+<p>&lt;!– Generic topic template –&gt;</p>
+
+<p>&lt;xsl:template name=“gen-topic”&gt;</p>
+
+<pre>&lt;topic xml:lang=&quot;{$default-lang}&quot;&gt;
+  &lt;xsl:call-template name=&quot;genidattribute&quot;/&gt;
+  &lt;xsl:call-template name=&quot;gentitle&quot;/&gt;
+  &lt;xsl:call-template name=&quot;gentitlealts&quot;/&gt;
+  &lt;xsl:call-template name=&quot;genprolog&quot;/&gt;
+  &lt;body&gt;
+    &lt;xsl:apply-templates select=&quot;(body/*|body/text()|body/comment())[1]&quot; mode=&quot;creating-content-before-section&quot;/&gt;
+    &lt;xsl:choose&gt;
+      &lt;xsl:when test=&quot;$main-head-level=&#39;h1&#39;&quot;&gt;
+        &lt;xsl:apply-templates select=&quot;body/h1[preceding-sibling::h1]|body/h2|body/h3|body/h4|body/h5|body/h6|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;$main-head-level=&#39;h2&#39;&quot;&gt;
+        &lt;xsl:apply-templates select=&quot;body/h1|body/h2[preceding-sibling::h2]|body/h3|body/h4|body/h5|body/h6|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;                              
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;$main-head-level=&#39;h3&#39;&quot;&gt;
+        &lt;xsl:apply-templates select=&quot;body/h1|body/h2|body/h3[preceding-sibling::h3]|body/h4|body/h5|body/h6|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;                              
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;$main-head-level=&#39;h4&#39;&quot;&gt;
+        &lt;xsl:apply-templates select=&quot;body/h1|body/h2|body/h3|body/h4[preceding-sibling::h4]|body/h5|body/h6|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;                              
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;$main-head-level=&#39;h5&#39;&quot;&gt;
+        &lt;xsl:apply-templates select=&quot;body/h1|body/h2|body/h3|body/h4|body/h5[preceding-sibling::h5]|body/h6|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;                              
+      &lt;/xsl:when&gt;
+      &lt;xsl:otherwise&gt; &lt;!-- Otherwise, level is h6 --&gt;
+        &lt;xsl:apply-templates select=&quot;body/h1|body/h2|body/h3|body/h4|body/h5|body/h6[preceding-sibling::h6]|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;                              
+      &lt;/xsl:otherwise&gt;
+    &lt;/xsl:choose&gt;
+  &lt;/body&gt;
+  &lt;xsl:call-template name=&quot;genrellinks&quot;/&gt;
+&lt;/topic&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Implementation note: except for topic, DITA infotypes have content models with strong</p>
+
+<pre>containment rules.  These implementations try to separate allowed body content from
+contexts required by the target formats. This may need additional work.  With XHTML 2.0,
+the tests for contextually introduced containment are eased and these templates can be
+generalized and possibly made more robust. --&gt;</pre>
+
+<p>&lt;!– Concept topic template –&gt;</p>
+
+<p>&lt;!– See task for ideas implemented here for separating regular body content from a first heading, which</p>
+
+<pre>ordinarily denotes one or more sections with NO following text.  We put EVERYTHING after the
+first h2 into a section as a strong-arm way to enforce the concept model, but users will have
+to check for intended scoping afterwards. --&gt;</pre>
+
+<p>&lt;xsl:template name=“gen-concept”&gt;</p>
+
+<pre>&lt;concept xml:lang=&quot;{$default-lang}&quot;&gt;
+  &lt;xsl:call-template name=&quot;genidattribute&quot;/&gt;
+  &lt;xsl:if test=&quot;@id&quot;&gt;&lt;xsl:attribute name=&quot;id&quot;&gt;&lt;xsl:value-of select=&quot;@id&quot;/&gt;&lt;/xsl:attribute&gt;&lt;/xsl:if&gt;
+  &lt;xsl:call-template name=&quot;gentitle&quot;/&gt;
+  &lt;xsl:call-template name=&quot;gentitlealts&quot;/&gt;
+  &lt;xsl:call-template name=&quot;genprolog&quot;/&gt;
+  &lt;conbody&gt;
+    &lt;!-- Anything up to the first heading (except for whatever heading was pulled into &lt;title&gt;) will
+         be processed as it would for a topic. After a heading is encountered, a section will be created
+         for that and all following headings. Content up to the next heading will go into the section. --&gt;
+    &lt;xsl:apply-templates select=&quot;(body/*|body/text()|body/comment())[1]&quot; mode=&quot;creating-content-before-section&quot;/&gt;
+    &lt;xsl:choose&gt;
+      &lt;xsl:when test=&quot;$main-head-level=&#39;h1&#39;&quot;&gt;
+        &lt;xsl:apply-templates select=&quot;body/h1[preceding-sibling::h1]|body/h2|body/h3|body/h4|body/h5|body/h6|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;$main-head-level=&#39;h2&#39;&quot;&gt;
+        &lt;xsl:apply-templates select=&quot;body/h1|body/h2[preceding-sibling::h2]|body/h3|body/h4|body/h5|body/h6|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;                              
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;$main-head-level=&#39;h3&#39;&quot;&gt;
+        &lt;xsl:apply-templates select=&quot;body/h1|body/h2|body/h3[preceding-sibling::h3]|body/h4|body/h5|body/h6|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;                              
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;$main-head-level=&#39;h4&#39;&quot;&gt;
+        &lt;xsl:apply-templates select=&quot;body/h1|body/h2|body/h3|body/h4[preceding-sibling::h4]|body/h5|body/h6|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;                              
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;$main-head-level=&#39;h5&#39;&quot;&gt;
+        &lt;xsl:apply-templates select=&quot;body/h1|body/h2|body/h3|body/h4|body/h5[preceding-sibling::h5]|body/h6|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;                              
+      &lt;/xsl:when&gt;
+      &lt;xsl:otherwise&gt; &lt;!-- Otherwise, level is h6 --&gt;
+        &lt;xsl:apply-templates select=&quot;body/h1|body/h2|body/h3|body/h4|body/h5|body/h6[preceding-sibling::h6]|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;                              
+      &lt;/xsl:otherwise&gt;
+    &lt;/xsl:choose&gt;
+  &lt;/conbody&gt;
+  &lt;xsl:call-template name=&quot;genrellinks&quot;/&gt;
+&lt;/concept&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“*|text()|comment()” mode=“creating-content-before-section”&gt;</p>
+
+<pre>&lt;xsl:apply-templates select=&quot;.&quot;/&gt;
+&lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text()|following-sibling::comment())[1]&quot; mode=&quot;creating-content-before-section&quot;/&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template match=“h1|h2|h3|h4|h5|h6” mode=“creating-content-before-section”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h1&#39; and self::h1 and not(preceding::h1)&quot;&gt;
+    &lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text()|following-sibling::comment())[1]&quot; mode=&quot;creating-content-before-section&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h2&#39; and self::h2 and not(preceding::h2)&quot;&gt;
+    &lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text()|following-sibling::comment())[1]&quot; mode=&quot;creating-content-before-section&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h3&#39; and self::h3 and not(preceding::h3)&quot;&gt;
+    &lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text()|following-sibling::comment())[1]&quot; mode=&quot;creating-content-before-section&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h4&#39; and self::h4 and not(preceding::h4)&quot;&gt;
+    &lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text()|following-sibling::comment())[1]&quot; mode=&quot;creating-content-before-section&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h5&#39; and self::h5 and not(preceding::h5)&quot;&gt;
+    &lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text()|following-sibling::comment())[1]&quot; mode=&quot;creating-content-before-section&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h6&#39; and self::h6 and not(preceding::h6)&quot;&gt;
+    &lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text()|following-sibling::comment())[1]&quot; mode=&quot;creating-content-before-section&quot;/&gt;
+  &lt;/xsl:when&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Reference topic template –&gt;</p>
+
+<p>&lt;xsl:template name=“gen-reference”&gt;</p>
+
+<pre>&lt;reference xml:lang=&quot;{$default-lang}&quot;&gt;
+  &lt;xsl:call-template name=&quot;genidattribute&quot;/&gt;
+  &lt;xsl:call-template name=&quot;gentitle&quot;/&gt;
+  &lt;xsl:call-template name=&quot;gentitlealts&quot;/&gt;
+  &lt;xsl:call-template name=&quot;genprolog&quot;/&gt;
+  &lt;refbody&gt;
+    &lt;!-- Processing is similar to concept, except that everything before the second heading must also be
+         placed into a section. Also, any tables can be outside of the section. --&gt;
+    &lt;xsl:choose&gt;
+      &lt;xsl:when test=&quot;$main-head-level=&#39;h1&#39;&quot;&gt;
+        &lt;!-- First process anything that comes before any subheadings, or a second h1 --&gt;
+        &lt;xsl:if test=&quot;body/text()[not(preceding::table or preceding::h1[2] or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6)]|
+                      body/comment()[not(preceding::table or preceding::h1[2] or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6)]|
+                      body/*[not(self::table or self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6 or
+                                 preceding::table or preceding::h1[2] or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6)]&quot;&gt;
+          &lt;section&gt;
+            &lt;xsl:apply-templates select=&quot;body/text()[not(preceding::table or preceding::h1[2] or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6)]|
+                                         body/comment()[not(preceding::table or preceding::h1[2] or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6)]|
+                                         body/*[not(self::table or self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6 or
+                                                    preceding::table[parent::body] or preceding::h1[2] or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6)]&quot;/&gt;
+          &lt;/section&gt;
+        &lt;/xsl:if&gt;
+        &lt;!-- Now turn any other headings into sections, with following stuff --&gt;
+        &lt;xsl:apply-templates select=&quot;body/table|body/h1[preceding-sibling::h1]|body/h2|body/h3|body/h4|body/h5|body/h6|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;$main-head-level=&#39;h2&#39;&quot;&gt;
+        &lt;!-- First process anything that comes before any subheadings, or a second h2 --&gt;
+        &lt;xsl:if test=&quot;body/text()[not(preceding::table or preceding::h1 or preceding::h2[2] or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6)]|
+                      body/comment()[not(preceding::table or preceding::h1 or preceding::h2[2] or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6)]|
+                      body/*[not(self::table or self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6 or
+                                 preceding::table or preceding::h1 or preceding::h2[2] or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6)]&quot;&gt;
+          &lt;section&gt;
+            &lt;xsl:apply-templates select=&quot;body/text()[not(preceding::table or preceding::h1 or preceding::h2[2] or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6)]|
+                                         body/comment()[not(preceding::table or preceding::h1 or preceding::h2[2] or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6)]|
+                                         body/*[not(self::table or self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6 or
+                                                    preceding::table[parent::body] or preceding::h1 or preceding::h2[2] or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6)]&quot;/&gt;
+          &lt;/section&gt;
+        &lt;/xsl:if&gt;
+        &lt;!-- Now turn any other headings into sections, with following stuff --&gt;
+        &lt;xsl:apply-templates select=&quot;body/table|body/h1|body/h2[preceding-sibling::h2]|body/h3|body/h4|body/h5|body/h6|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;$main-head-level=&#39;h3&#39;&quot;&gt;
+        &lt;!-- First process anything that comes before any subheadings, or a second h3 --&gt;
+        &lt;xsl:if test=&quot;body/text()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3[2] or preceding::h4 or preceding::h5 or preceding::h6)]|
+                      body/comment()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3[2] or preceding::h4 or preceding::h5 or preceding::h6)]|
+                      body/*[not(self::table or self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6 or
+                                 preceding::table or preceding::h1 or preceding::h2 or preceding::h3[2] or preceding::h4 or preceding::h5 or preceding::h6)]&quot;&gt;
+          &lt;section&gt;
+            &lt;xsl:apply-templates select=&quot;body/text()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3[2] or preceding::h4 or preceding::h5 or preceding::h6)]|
+                                         body/comment()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3[2] or preceding::h4 or preceding::h5 or preceding::h6)]|
+                                         body/*[not(self::table or self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6 or
+                                                    preceding::table[parent::body] or preceding::h1 or preceding::h2 or preceding::h3[2] or preceding::h4 or preceding::h5 or preceding::h6)]&quot;/&gt;
+          &lt;/section&gt;
+        &lt;/xsl:if&gt;
+        &lt;!-- Now turn any other headings into sections, with following stuff --&gt;
+        &lt;xsl:apply-templates select=&quot;body/table|body/h1|body/h2|body/h3[preceding-sibling::h3]|body/h4|body/h5|body/h6|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;$main-head-level=&#39;h4&#39;&quot;&gt;
+        &lt;!-- First process anything that comes before any subheadings, or a second h4 --&gt;
+        &lt;xsl:if test=&quot;body/text()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4[2] or preceding::h5 or preceding::h6)]|
+                      body/text()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4[2] or preceding::h5 or preceding::h6)]|
+                      body/*[not(self::table or self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6 or
+                                 preceding::table or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4[2] or preceding::h5 or preceding::h6)]&quot;&gt;
+          &lt;section&gt;
+            &lt;xsl:apply-templates select=&quot;body/text()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4[2] or preceding::h5 or preceding::h6)]|
+                                         body/comment()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4[2] or preceding::h5 or preceding::h6)]|
+                                         body/*[not(self::table or self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6 or
+                                                    preceding::table[parent::body] or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4[2] or preceding::h5 or preceding::h6)]&quot;/&gt;
+          &lt;/section&gt;
+        &lt;/xsl:if&gt;
+        &lt;!-- Now turn any other headings into sections, with following stuff --&gt;
+        &lt;xsl:apply-templates select=&quot;body/table|body/h1|body/h2|body/h3|body/h4[preceding-sibling::h4]|body/h5|body/h6|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;$main-head-level=&#39;h5&#39;&quot;&gt;
+        &lt;!-- First process anything that comes before any subheadings, or a second h5 --&gt;
+        &lt;xsl:if test=&quot;body/text()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5[2] or preceding::h6)]|
+                      body/comment()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5[2] or preceding::h6)]|
+                      body/*[not(self::table or self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6 or
+                                 preceding::table or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5[2] or preceding::h6)]&quot;&gt;
+          &lt;section&gt;
+            &lt;xsl:apply-templates select=&quot;body/text()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5[2] or preceding::h6)]|
+                                         body/comment()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5[2] or preceding::h6)]|
+                                         body/*[not(self::table or self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6 or
+                                                    preceding::table[parent::body] or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5[2] or preceding::h6)]&quot;/&gt;
+          &lt;/section&gt;
+        &lt;/xsl:if&gt;
+        &lt;!-- Now turn any other headings into sections, with following stuff --&gt;
+        &lt;xsl:apply-templates select=&quot;body/table|body/h1|body/h2|body/h3|body/h4|body/h5[preceding-sibling::h5]|body/h6|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:otherwise&gt;
+        &lt;!-- First process anything that comes before any subheadings, or a second heading --&gt;
+        &lt;xsl:if test=&quot;body/text()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6[2])]|
+                      body/comment()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6[2])]|
+                      body/*[not(self::table or self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6 or
+                                 preceding::table or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6[2])]&quot;&gt;
+          &lt;section&gt;
+            &lt;xsl:apply-templates select=&quot;body/text()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6[2])]|
+                                         body/comment()[not(preceding::table or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6[2])]|
+                                         body/*[not(self::table or self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6 or
+                                                    preceding::table[parent::body] or preceding::h1 or preceding::h2 or preceding::h3 or preceding::h4 or preceding::h5 or preceding::h6[2])]&quot;/&gt;
+          &lt;/section&gt;
+        &lt;/xsl:if&gt;
+        &lt;!-- Now turn any other headings into sections, with following stuff --&gt;
+        &lt;xsl:apply-templates select=&quot;body/table|body/h1|body/h2|body/h3|body/h4|body/h5|body/h6[preceding-sibling::h6]|body/h7&quot; mode=&quot;create-section-with-following-content&quot;/&gt;
+      &lt;/xsl:otherwise&gt;
+    &lt;/xsl:choose&gt;
+  &lt;/refbody&gt;
+  &lt;xsl:call-template name=&quot;genrellinks&quot;/&gt;
+&lt;/reference&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Task topic template –&gt;</p>
+
+<p>&lt;xsl:template name=“gen-task”&gt;</p>
+
+<pre>&lt;task xml:lang=&quot;{$default-lang}&quot;&gt;
+  &lt;xsl:call-template name=&quot;genidattribute&quot;/&gt;
+  &lt;xsl:call-template name=&quot;gentitle&quot;/&gt;
+  &lt;xsl:call-template name=&quot;gentitlealts&quot;/&gt;
+  &lt;xsl:call-template name=&quot;genprolog&quot;/&gt;
+  &lt;taskbody&gt;
+    &lt;!--Optional prereq section goes here--&gt;
+    &lt;!--context [any child elements with no preceding ol]--&gt;
+    &lt;xsl:if test=&quot;body/text()[not(preceding-sibling::ol)]|body/comment()[not(preceding-sibling::ol)]|body/*[not(preceding-sibling::ol)][not(self::ol)]&quot;&gt;
+      &lt;context&gt;
+        &lt;xsl:apply-templates select=&quot;body/text()[not(preceding-sibling::ol)]|body/comment()[not(preceding-sibling::ol)]|body/*[not(preceding-sibling::ol)][not(self::ol)]&quot;/&gt;
+      &lt;/context&gt;
+    &lt;/xsl:if&gt;
+    &lt;!--steps [first ol within a body = steps!] --&gt;
+    &lt;xsl:if test=&quot;body/ol&quot;&gt;
+      &lt;steps&gt;
+        &lt;xsl:apply-templates select=&quot;body/ol[1]/li|body/ol[1]/comment()&quot; mode=&quot;steps&quot;/&gt;
+      &lt;/steps&gt;
+    &lt;/xsl:if&gt;
+    &lt;!--result [any children with a preceding ol]--&gt;
+    &lt;xsl:if test=&quot;body/text()[preceding-sibling::ol]|body/comment()[preceding-sibling::ol]|body/*[preceding-sibling::ol]&quot;&gt;
+      &lt;result&gt;
+        &lt;xsl:apply-templates select=&quot;body/text()[preceding-sibling::ol]|body/comment()[preceding-sibling::ol]|body/*[preceding-sibling::ol]&quot;/&gt;
+      &lt;/result&gt;
+    &lt;/xsl:if&gt;
+    &lt;!--Optional example section--&gt;
+    &lt;!--Optional postreq section--&gt;
+  &lt;/taskbody&gt;
+  &lt;xsl:call-template name=&quot;genrellinks&quot;/&gt;
+&lt;/task&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– this template handle ol/li processing within a task –&gt; &lt;!– The default behavior is to put each &lt;li&gt; into a &lt;step&gt;. If this is being</p>
+
+<pre>used to create substeps, the $steptype parameter is passed in as &quot;substep&quot;.
+If the &lt;li&gt; does not contain blocklike info, put everything in &lt;cmd&gt;. Otherwise,
+put everything up to the first block into &lt;cmd&gt;. Everything from the first block
+on will be placed in substeps (if it is an OL) or in &lt;info&gt; (everything else).  --&gt;</pre>
+
+<p>&lt;xsl:template match=“li” mode=“steps”&gt;</p>
+
+<pre>&lt;xsl:param name=&quot;steptype&quot;&gt;step&lt;/xsl:param&gt;
+&lt;xsl:element name=&quot;{$steptype}&quot;&gt;
+  &lt;xsl:apply-templates select=&quot;@class&quot;/&gt;
+  &lt;xsl:choose&gt;
+    &lt;xsl:when test=&quot;not(p|div|ol|ul|table|dl|pre)&quot;&gt;
+      &lt;cmd&gt;&lt;xsl:apply-templates select=&quot;*|comment()|text()&quot;/&gt;&lt;/cmd&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:otherwise&gt;
+      &lt;cmd&gt;&lt;xsl:apply-templates select=&quot;(./*|./text())[1]&quot; mode=&quot;step-cmd&quot;/&gt;&lt;/cmd&gt;
+      &lt;xsl:apply-templates select=&quot;(p|div|ol|ul|table|dl|pre|comment())[1]&quot; mode=&quot;step-child&quot;/&gt;
+    &lt;/xsl:otherwise&gt;
+  &lt;/xsl:choose&gt;
+&lt;/xsl:element&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template match=“comment()” mode=“steps”&gt;</p>
+
+<pre>&lt;xsl:apply-templates select=&quot;.&quot;/&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Add content to a &lt;cmd&gt;. If this is block like, stop iterating and return to the li.</p>
+
+<pre>Otherwise, output the current node using normal processing, and move to the next
+text or element node. --&gt;</pre>
+
+<p>&lt;xsl:template match=“p|div|ol|ul|table|dl|pre” mode=“step-cmd”/&gt; &lt;xsl:template match=“text()|*” mode=“step-cmd”&gt;</p>
+
+<pre>&lt;xsl:apply-templates select=&quot;.&quot;/&gt;
+&lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text())[1]&quot; mode=&quot;step-cmd&quot;/&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– If an ol is inside a step, convert it to substeps. If it is inside substeps, put it in info.</p>
+
+<pre>For any other elements, create an info, and output the current node. Also output the
+following text or element node, which will work up to any &lt;ol&gt;. --&gt;</pre>
+
+<p>&lt;xsl:template match=“ol” mode=“step-child”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;!-- If already in substeps --&gt;
+  &lt;xsl:when test=&quot;parent::li/parent::ol/parent::li/parent::ol&quot;&gt;
+    &lt;info&gt;&lt;xsl:apply-templates select=&quot;.&quot;/&gt;&lt;/info&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;substeps&gt;
+      &lt;xsl:apply-templates select=&quot;li&quot; mode=&quot;steps&quot;&gt;
+        &lt;xsl:with-param name=&quot;steptype&quot;&gt;substep&lt;/xsl:with-param&gt;
+      &lt;/xsl:apply-templates&gt;
+    &lt;/substeps&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;
+&lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text())[1]&quot; mode=&quot;step-child&quot;/&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template match=“text()|*|comment()” mode=“step-child”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;self::* or string-length(normalize-space(.))&gt;0&quot;&gt;
+    &lt;info&gt;
+      &lt;xsl:apply-templates select=&quot;.&quot;/&gt;
+      &lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text()|following-sibling::comment())[1]&quot; mode=&quot;add-to-info&quot;/&gt;
+    &lt;/info&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;!-- Ignore empty text nodes and empty comments, move on to the next node --&gt;
+    &lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text()|following-sibling::comment())[1]&quot; mode=&quot;step-child&quot;/&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;
+&lt;xsl:apply-templates select=&quot;following-sibling::ol[1]&quot; mode=&quot;step-child&quot;/&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– When adding to &lt;info&gt;, if an ol is found, stop: it will become substeps, or its own info.</p>
+
+<pre>Anything else: output the element, and then output the following text or element node,
+remaining inside &lt;info&gt;. --&gt;</pre>
+
+<p>&lt;xsl:template match=“ol” mode=“add-to-info”/&gt; &lt;xsl:template match=“*|text()|comment()” mode=“add-to-info”&gt;</p>
+
+<pre>&lt;xsl:apply-templates select=&quot;.&quot;/&gt;
+&lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text()|following-sibling::comment())[1]&quot; mode=&quot;add-to-info&quot;/&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Support for generating contextually dependent ID for topics. –&gt; &lt;!– This will need to be improved; no HTML will have an id, so only the</p>
+
+<pre>    otherwise will trigger. Better test: use the filename or first a/@name
++--&gt;</pre>
+
+<p>&lt;!– NOTE: this is only to be used for the topic element –&gt; &lt;xsl:template name=“genidattribute”&gt;</p>
+
+<pre>&lt;xsl:attribute name=&quot;id&quot;&gt;
+ &lt;xsl:choose&gt;
+   &lt;xsl:when test=&quot;string-length($filename-id)&gt;0&quot;&gt;&lt;xsl:value-of select=&quot;$filename-id&quot;/&gt;&lt;/xsl:when&gt;
+   &lt;xsl:when test=&quot;/html/@id&quot;&gt;&lt;xsl:value-of select=&quot;/html/@id&quot;/&gt;&lt;/xsl:when&gt;
+   &lt;xsl:otherwise&gt;&lt;xsl:value-of select=&quot;generate-id(/html)&quot;/&gt;&lt;/xsl:otherwise&gt;
+ &lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:attribute&gt; &lt;/xsl:template&gt;</p>
+
+<p>&lt;!– named templates for out of line pulls –&gt;</p>
+
+<p>&lt;!– 02/12/03 drd: mp says to leave this as linklist, not linkpool, for now –&gt; &lt;xsl:template name=“genrellinks”&gt; &lt;xsl:if <a href="@href">test=“.//a</a>[not(starts-with(@href,&#39;#&#39;))]”&gt; &lt;related-links&gt; &lt;linklist&gt;&lt;title&gt;Collected links&lt;/title&gt;</p>
+
+<pre>&lt;xsl:for-each select=&quot;.//a[@href][not(starts-with(@href,&#39;#&#39;))]&quot;&gt;
+  &lt;link&gt;
+    &lt;xsl:call-template name=&quot;genlinkattrs&quot;/&gt;
+    &lt;linktext&gt;&lt;xsl:value-of select=&quot;.&quot;/&gt;&lt;/linktext&gt;
+    &lt;xsl:if test=&quot;@title&quot;&gt;
+      &lt;desc&gt;&lt;xsl:value-of select=&quot;normalize-space(@title)&quot;/&gt;&lt;/desc&gt;
+    &lt;/xsl:if&gt;
+  &lt;/link&gt;
+&lt;/xsl:for-each&gt;</pre>
+
+<p>&lt;/linklist&gt; &lt;/related-links&gt; &lt;/xsl:if&gt; &lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template name=“genlinkattrs”&gt;</p>
+
+<pre>&lt;xsl:variable name=&quot;newfn&quot;&gt;
+  &lt;xsl:value-of select=&quot;substring-before(@href,&#39;.htm&#39;)&quot;/&gt;
+&lt;/xsl:variable&gt;
+&lt;xsl:choose&gt;
+  &lt;!-- If the target is a web site, do not change extension to .dita --&gt;
+  &lt;xsl:when test=&quot;starts-with(@href,&#39;http:&#39;) or starts-with(@href,&#39;https:&#39;) or
+                  starts-with(@href,&#39;ftp:&#39;)&quot;&gt;
+    &lt;xsl:attribute name=&quot;href&quot;&gt;&lt;xsl:value-of select=&quot;@href&quot;/&gt;&lt;/xsl:attribute&gt;
+    &lt;xsl:attribute name=&quot;scope&quot;&gt;external&lt;/xsl:attribute&gt;
+    &lt;xsl:attribute name=&quot;format&quot;&gt;
+      &lt;xsl:choose&gt;
+        &lt;xsl:when test=&quot;contains(@href,&#39;.pdf&#39;) or contains(@href,&#39;.PDF&#39;)&quot;&gt;pdf&lt;/xsl:when&gt;
+        &lt;xsl:otherwise&gt;html&lt;/xsl:otherwise&gt;
+      &lt;/xsl:choose&gt;
+    &lt;/xsl:attribute&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;string-length($newfn)&gt;0&quot;&gt;
+    &lt;xsl:attribute name=&quot;href&quot;&gt;&lt;xsl:value-of select=&quot;$newfn&quot;/&gt;&lt;xsl:value-of select=&quot;$dita-extension&quot;/&gt;&lt;/xsl:attribute&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;starts-with(@href,&#39;#&#39;)&quot;&gt;
+    &lt;xsl:variable name=&quot;infile-reference&quot;&gt;
+      &lt;xsl:text&gt;#&lt;/xsl:text&gt;
+      &lt;!-- Need to udpate this if genidattribute changes --&gt;
+      &lt;xsl:choose&gt;
+        &lt;xsl:when test=&quot;string-length($filename-id)&gt;0&quot;&gt;&lt;xsl:value-of select=&quot;$filename-id&quot;/&gt;&lt;/xsl:when&gt;
+        &lt;xsl:when test=&quot;/html/@id&quot;&gt;&lt;xsl:value-of select=&quot;/html/@id&quot;/&gt;&lt;/xsl:when&gt;
+        &lt;xsl:otherwise&gt;&lt;xsl:value-of select=&quot;generate-id(/html)&quot;/&gt;&lt;/xsl:otherwise&gt;
+      &lt;/xsl:choose&gt;
+      &lt;xsl:text&gt;/&lt;/xsl:text&gt;
+      &lt;xsl:value-of select=&quot;substring-after(@href,&#39;#&#39;)&quot;/&gt;
+    &lt;/xsl:variable&gt;
+    &lt;!-- output-message? --&gt;
+    &lt;xsl:attribute name=&quot;href&quot;&gt;&lt;xsl:value-of select=&quot;$infile-reference&quot;/&gt;&lt;/xsl:attribute&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;xsl:attribute name=&quot;href&quot;&gt;&lt;xsl:value-of select=&quot;@href&quot;/&gt;&lt;/xsl:attribute&gt;
+    &lt;xsl:attribute name=&quot;format&quot;&gt;
+      &lt;xsl:choose&gt;
+        &lt;xsl:when test=&quot;contains(@href,&#39;.pdf&#39;) or contains(@href,&#39;.PDF&#39;)&quot;&gt;pdf&lt;/xsl:when&gt;
+        &lt;xsl:otherwise&gt;html&lt;/xsl:otherwise&gt;  &lt;!-- Default to html --&gt;
+      &lt;/xsl:choose&gt;
+    &lt;/xsl:attribute&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;
+&lt;xsl:if test=&quot;@target=&#39;_blank&#39;&quot;&gt;
+  &lt;xsl:attribute name=&quot;scope&quot;&gt;external&lt;/xsl:attribute&gt;
+&lt;/xsl:if&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– gentitle was here –&gt;</p>
+
+<p>&lt;xsl:template name=“genprolog”&gt; &lt;xsl:if <a href="@name">test=“.//meta</a>[not(@name=&#39;generator&#39; or @name=&#39;GENERATOR&#39;)]|head/comment()”&gt;&lt;!– produce only if qualifiend meta is extant –&gt;</p>
+
+<pre>&lt;prolog&gt;
+  &lt;!--xsl:comment&gt;author, copyright, critdates, permissions, publisher, source&lt;/xsl:comment--&gt;
+  &lt;metadata&gt;
+    &lt;xsl:apply-templates select=&quot;head/comment()&quot;/&gt;
+    &lt;xsl:apply-templates select=&quot;.//meta[not(@name=&#39;generator&#39; or @name=&#39;GENERATOR&#39;)]&quot; mode=&quot;outofline&quot;/&gt;
+  &lt;/metadata&gt;
+&lt;/prolog&gt;</pre>
+
+<p>&lt;/xsl:if&gt; &lt;/xsl:template&gt;</p>
+
+<p>&lt;!– TBD: do anything rational with scripts or styles in the head? elsewhere? –&gt; &lt;!– 05232002 drd: null out scripts, flat out (script in head was nulled out before, </p>
+
+<pre>but scripts in body were coming through)</pre>
+
+<p>–&gt; &lt;xsl:template match=“script”/&gt; &lt;xsl:template match=“style”/&gt;</p>
+
+<p>&lt;!– take out some other interactive, non-content gadgets that are not part of the DITA source model –&gt; &lt;!– TBD: consider adding messages within these –&gt; &lt;xsl:template match=“textarea”/&gt; &lt;xsl:template match=“input”/&gt; &lt;xsl:template match=“isindex”/&gt; &lt;xsl:template match=“select”/&gt; &lt;xsl:template match=“optgroup”/&gt; &lt;xsl:template match=“option”/&gt; &lt;xsl:template match=“label”/&gt; &lt;xsl:template match=“fieldset”/&gt; &lt;xsl:template match=“basefont”/&gt; &lt;xsl:template match=“col”/&gt; &lt;xsl:template match=“colgroup”/&gt;</p>
+
+<p>&lt;!– ========== Start of heading-aware code =============== –&gt;</p>
+
+<p>&lt;!– Generic treatment for all headings (1-9!).  The main title and section level code –&gt; &lt;!– have higher priorities that override getting triggered by this generic rule. –&gt;</p>
+
+<p>&lt;xsl:template name=“cleanup-heading”&gt;</p>
+
+<pre>&lt;xsl:call-template name=&quot;output-message&quot;&gt;
+    &lt;xsl:with-param name=&quot;msg&quot;&gt;A &lt;xsl:value-of select=&quot;name()&quot;/&gt; heading could not be converted into DITA.</pre>
+
+<p>The heading has been placed in a required-cleanup element.&lt;/xsl:with-param&gt;</p>
+
+<pre>&lt;/xsl:call-template&gt;
+&lt;required-cleanup&gt;
+  &lt;p&gt;
+    &lt;b&gt;[deprecated heading &lt;xsl:value-of select=&quot;name()&quot;/&gt; ]: &lt;/b&gt;
+    &lt;xsl:apply-templates select=&quot;*|comment()|text()&quot;/&gt;
+  &lt;/p&gt;
+&lt;/required-cleanup&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“h1” priority=“5”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;not(preceding::h1)&quot;/&gt;
+  &lt;xsl:when test=&quot;$infotype=&#39;task&#39;&quot;&gt;&lt;xsl:call-template name=&quot;cleanup-heading&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h1&#39;&quot;&gt;&lt;xsl:call-template name=&quot;gensection&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;&lt;xsl:call-template name=&quot;cleanup-heading&quot;/&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template match=“h2” priority=“5”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h2&#39; and not(preceding::h2)&quot;/&gt;
+  &lt;xsl:when test=&quot;$infotype=&#39;task&#39;&quot;&gt;&lt;xsl:call-template name=&quot;cleanup-heading&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h1&#39; or $main-head-level=&#39;h2&#39;&quot;&gt;&lt;xsl:call-template name=&quot;gensection&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;&lt;xsl:call-template name=&quot;cleanup-heading&quot;/&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template match=“h3” priority=“5”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h3&#39; and not(preceding::h3)&quot;/&gt;
+  &lt;xsl:when test=&quot;$infotype=&#39;task&#39;&quot;&gt;&lt;xsl:call-template name=&quot;cleanup-heading&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h2&#39; or $main-head-level=&#39;h3&#39;&quot;&gt;&lt;xsl:call-template name=&quot;gensection&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;&lt;xsl:call-template name=&quot;cleanup-heading&quot;/&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template match=“h4” priority=“5”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h4&#39; and not(preceding::h4)&quot;/&gt;
+  &lt;xsl:when test=&quot;$infotype=&#39;task&#39;&quot;&gt;&lt;xsl:call-template name=&quot;cleanup-heading&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h3&#39; or $main-head-level=&#39;h4&#39;&quot;&gt;&lt;xsl:call-template name=&quot;gensection&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;&lt;xsl:call-template name=&quot;cleanup-heading&quot;/&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template match=“h5” priority=“5”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h5&#39; and not(preceding::h5)&quot;/&gt;
+  &lt;xsl:when test=&quot;$infotype=&#39;task&#39;&quot;&gt;&lt;xsl:call-template name=&quot;cleanup-heading&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h4&#39; or $main-head-level=&#39;h5&#39;&quot;&gt;&lt;xsl:call-template name=&quot;gensection&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;&lt;xsl:call-template name=&quot;cleanup-heading&quot;/&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template match=“h6” priority=“5”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h6&#39; and not(preceding::h6)&quot;/&gt;
+  &lt;xsl:when test=&quot;$infotype=&#39;task&#39;&quot;&gt;&lt;xsl:call-template name=&quot;cleanup-heading&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h5&#39; or $main-head-level=&#39;h6&#39;&quot;&gt;&lt;xsl:call-template name=&quot;gensection&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;&lt;xsl:call-template name=&quot;cleanup-heading&quot;/&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template match=“h7” priority=“5”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h6&#39;&quot;&gt;&lt;xsl:call-template name=&quot;gensection&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;&lt;xsl:call-template name=&quot;cleanup-heading&quot;/&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template match=“h8|h9”&gt;</p>
+
+<pre>&lt;xsl:call-template name=&quot;cleanup-heading&quot;/&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Templates used to pull content following headings into the generated section –&gt; &lt;xsl:template match=“h1|h2|h3|h4|h5|h6|h7” mode=“add-content-to-section”/&gt; &lt;xsl:template match=“*|text()|comment()” mode=“add-content-to-section”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+&lt;!-- For reference, tables also create a section, so leave them out. Otherwise, they go inside sections. --&gt;
+  &lt;xsl:when test=&quot;self::table and $infotype=&#39;reference&#39;&quot;/&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;xsl:apply-templates select=&quot;.&quot;/&gt;
+    &lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text()|following-sibling::comment())[1]&quot; mode=&quot;add-content-to-section&quot;/&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template name=“convert-heading-to-section”&gt;</p>
+
+<pre>&lt;section&gt;
+  &lt;title&gt;&lt;xsl:apply-templates select=&quot;@class&quot;/&gt;&lt;xsl:apply-templates select=&quot;*|comment()|text()&quot;/&gt;&lt;/title&gt;
+  &lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text()|following-sibling::comment())[1]&quot; mode=&quot;add-content-to-section&quot;/&gt;
+&lt;/section&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template match=“h1|h2|h3|h4|h5|h6|h7” mode=“create-section-with-following-content”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h1&#39; and (self::h1 or self::h2)&quot;&gt;
+    &lt;xsl:call-template name=&quot;convert-heading-to-section&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h2&#39; and (self::h2 or self::h3)&quot;&gt;
+    &lt;xsl:call-template name=&quot;convert-heading-to-section&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h3&#39; and (self::h3 or self::h4)&quot;&gt;
+    &lt;xsl:call-template name=&quot;convert-heading-to-section&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h4&#39; and (self::h4 or self::h5)&quot;&gt;
+    &lt;xsl:call-template name=&quot;convert-heading-to-section&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h5&#39; and (self::h5 or self::h6)&quot;&gt;
+    &lt;xsl:call-template name=&quot;convert-heading-to-section&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;$main-head-level=&#39;h6&#39; and (self::h6 or self::h7)&quot;&gt;
+    &lt;xsl:call-template name=&quot;convert-heading-to-section&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;xsl:call-template name=&quot;output-message&quot;&gt;
+      &lt;xsl:with-param name=&quot;msg&quot;&gt;A &lt;xsl:value-of select=&quot;name()&quot;/&gt; heading could not be converted into DITA.</pre>
+
+<p>The heading has been placed in a required-cleanup element.&lt;/xsl:with-param&gt;</p>
+
+<pre>    &lt;/xsl:call-template&gt;
+    &lt;section&gt;
+      &lt;required-cleanup&gt;
+        &lt;title&gt;&lt;xsl:apply-templates select=&quot;@class&quot;/&gt;&lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;&lt;/title&gt;
+        &lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text()|following-sibling::comment())[1]&quot; mode=&quot;add-content-to-section&quot;/&gt;
+      &lt;/required-cleanup&gt;
+    &lt;/section&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;!– The next template can only be called when processing items in the reference body –&gt; &lt;xsl:template match=“table” mode=“create-section-with-following-content”&gt;</p>
+
+<pre>&lt;xsl:apply-templates select=&quot;.&quot;/&gt;
+&lt;xsl:if test=&quot;(following-sibling::*|following-sibling::text()|following-sibling::comment())[1][not(self::table or self::h2 or self::h3 or self::h4 or self::h5 or self::h6 or self::h7)]&quot;&gt;
+  &lt;section&gt;
+    &lt;xsl:apply-templates select=&quot;(following-sibling::*|following-sibling::text()|following-sibling::comment())[1]&quot; mode=&quot;add-content-to-section&quot;/&gt;
+  &lt;/section&gt;
+&lt;/xsl:if&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Special treatment for headings that occur at a section level –&gt; &lt;xsl:template name=“gensection”&gt;</p>
+
+<pre>&lt;section&gt;
+  &lt;xsl:variable name=&quot;hcnt&quot;&gt;&lt;xsl:number/&gt;&lt;/xsl:variable&gt;
+  &lt;!--&lt;xsl:value-of select=&quot;$hcnt&quot;/&gt;--&gt;
+  &lt;title&gt;&lt;xsl:apply-templates select=&quot;@class&quot;/&gt;&lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;&lt;/title&gt;
+  &lt;!-- call recursively for subsequent chunks --&gt;
+  &lt;xsl:call-template name=&quot;output-message&quot;&gt;
+    &lt;xsl:with-param name=&quot;msg&quot;&gt;A &lt;xsl:value-of select=&quot;name()&quot;/&gt; heading was mapped to an empty section.</pre>
+
+<p>Move any content that belongs with that heading into the section.&lt;/xsl:with-param&gt;</p>
+
+<pre>  &lt;/xsl:call-template&gt;
+&lt;/section&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– ========== Start of overrideable heading level code =============== –&gt;</p>
+
+<p>&lt;!– Default: h1=topic title; h2=section title; all others=bold text –&gt; &lt;!– For plain text pull (no problems with content in headings!), use xsl:value-of –&gt; &lt;!– (ie, if you use xsl:apply-templates select, you might get unwanted elements in title) –&gt; &lt;!– These templates will be overridden by heading-level aware front ends –&gt; &lt;!– Note: The generic heading processor treats all headings as priority=1;</p>
+
+<pre>          priority=2 in this master transform will override the generic heading processor
+          priority=3 in the overrides will override this h1/h2 default setup
++--&gt;</pre>
+
+<p>&lt;!– === initially define the defaults for h1/h2 topic/section mappings === –&gt;</p>
+
+<p>&lt;xsl:template name=“gentitle”&gt;</p>
+
+<pre>&lt;title&gt;
+  &lt;xsl:choose&gt;
+    &lt;xsl:when test=&quot;$main-head-level=&#39;h1&#39;&quot;&gt;&lt;xsl:value-of select=&quot;.//h1[1]&quot;/&gt;&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;$main-head-level=&#39;h2&#39;&quot;&gt;&lt;xsl:value-of select=&quot;.//h2[1]&quot;/&gt;&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;$main-head-level=&#39;h3&#39;&quot;&gt;&lt;xsl:value-of select=&quot;.//h3[1]&quot;/&gt;&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;$main-head-level=&#39;h4&#39;&quot;&gt;&lt;xsl:value-of select=&quot;.//h4[1]&quot;/&gt;&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;$main-head-level=&#39;h5&#39;&quot;&gt;&lt;xsl:value-of select=&quot;.//h5[1]&quot;/&gt;&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;$main-head-level=&#39;h6&#39;&quot;&gt;&lt;xsl:value-of select=&quot;.//h6[1]&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;/xsl:choose&gt;
+&lt;/title&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template name=“gentitlealts”&gt;</p>
+
+<pre>&lt;xsl:variable name=&quot;create-searchtitle&quot;&gt;
+  &lt;xsl:choose&gt;
+    &lt;xsl:when test=&quot;not(/html/head/title)&quot;&gt;NO&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;$main-head-level=&#39;h1&#39; and normalize-space(string(//h1[1]))=normalize-space(string(/html/head/title))&quot;&gt;NO&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;$main-head-level=&#39;h2&#39; and normalize-space(string(//h2[1]))=normalize-space(string(/html/head/title))&quot;&gt;NO&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;$main-head-level=&#39;h3&#39; and normalize-space(string(//h3[1]))=normalize-space(string(/html/head/title))&quot;&gt;NO&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;$main-head-level=&#39;h4&#39; and normalize-space(string(//h4[1]))=normalize-space(string(/html/head/title))&quot;&gt;NO&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;$main-head-level=&#39;h5&#39; and normalize-space(string(//h5[1]))=normalize-space(string(/html/head/title))&quot;&gt;NO&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;$main-head-level=&#39;h6&#39; and normalize-space(string(//h6[1]))=normalize-space(string(/html/head/title))&quot;&gt;NO&lt;/xsl:when&gt;
+    &lt;xsl:otherwise&gt;YES&lt;/xsl:otherwise&gt;
+  &lt;/xsl:choose&gt;
+&lt;/xsl:variable&gt;
+&lt;xsl:if test=&quot;$create-searchtitle=&#39;YES&#39;&quot;&gt;
+  &lt;titlealts&gt;
+    &lt;searchtitle&gt;
+      &lt;xsl:value-of select=&quot;/html/head/title&quot;/&gt;
+    &lt;/searchtitle&gt;
+  &lt;/titlealts&gt;
+&lt;/xsl:if&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– null out some things pulled later –&gt; &lt;!–&lt;xsl:template match=“h1” priority=“2”/&gt;</p>
+
+<p>&lt;xsl:template match=“h2” priority=“2”&gt;</p>
+
+<pre>&lt;xsl:call-template name=&quot;gensection&quot;/&gt;</pre>
+
+<p>&lt;/xsl:template&gt; –&gt;</p>
+
+<p>&lt;!– ========== End of overrideable heading level code =============== –&gt;</p>
+
+<p>&lt;!– null out some things pulled later –&gt; &lt;xsl:template match=“head”/&gt; &lt;xsl:template match=“title”/&gt;</p>
+
+<p>&lt;!– Clear up faux “related-links” that are already pulled into collected links:</p>
+
+<pre>eg, template match=&quot;br-with-nothing but imgs, links, and brs after it&quot;--&gt;</pre>
+
+<p>&lt;!– These rules attempt to leave behind any images or links that are part of a</p>
+
+<pre>discourse context, and use the rule &quot;br followed by image or anchor&quot; as what
+to interpret as a hand-built &quot;related links&quot; construct. --&gt;</pre>
+
+<p>&lt;!– 03/28/2003: Moved <br> processing into a single “br” template –&gt;  </p>
+
+<p>&lt;!– 03/28/2003: Removal of &lt;a&gt; does not work, because body overrides; move into</p>
+
+<pre>&quot;a&quot; template for now, though it does not work well --&gt;</pre>
+
+<p>&lt;!–eliminate a br following an img or an a element –&gt; &lt;!– &lt;xsl:template match=“<strong>[self::br][following-sibling::</strong>[1][self::img|self::a]]”/&gt; –&gt; &lt;!–eliminate an a-link preceded by a br–&gt; &lt;!–  &lt;xsl:template <a href="@href">match=“a</a>[preceding-sibling::br]”/&gt; –&gt; &lt;!–eliminate an img preceded by a br–&gt; &lt;!–  &lt;xsl:template <a href="preceding-sibling::br">match=“img</a>”/&gt; –&gt; &lt;!–eliminate a final br in a context (usually just for vertical space)–&gt; &lt;!– &lt;xsl:template <a href="name(following-sibling::*)=''">match=“br</a>”/&gt; –&gt;</p>
+
+<p>&lt;!– body: fall through, since its contexts (refbody, conbody, etc.) will be</p>
+
+<pre>generated by templates above --&gt;</pre>
+
+<p>&lt;xsl:template match=“body”&gt;</p>
+
+<pre>&lt;xsl:apply-templates/&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– divs: if we can base transform on a class, do so. –&gt; &lt;!– generic divs will fall through with no associated transform –&gt;</p>
+
+<p>&lt;xsl:template match=“div”&gt;</p>
+
+<pre>&lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– some characteristics of HTML coming from DocBook tools –&gt; &lt;xsl:template <a href="@class='footnote'">match=“div</a>”&gt; &lt;lq&gt;</p>
+
+<pre>&lt;xsl:if test=&quot;@id&quot;&gt;&lt;xsl:attribute name=&quot;id&quot;&gt;&lt;xsl:value-of select=&quot;@id&quot;/&gt;&lt;/xsl:attribute&gt;&lt;/xsl:if&gt;
+&lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;</pre>
+
+<p>&lt;/lq&gt; &lt;/xsl:template&gt;</p>
+
+<p>&lt;!– this comes from IDWB XHTML output… content that replicates existing structure, therefore null out –&gt; &lt;xsl:template <a href="@class='toc'">match=“div</a>”&gt; &lt;/xsl:template&gt;</p>
+
+<p>&lt;!– map these common elements straight through –&gt; &lt;xsl:template match=“cite|p|dl|ol|ul|li|pre|sub|sup|b|u|i”&gt; &lt;xsl:variable name=“giname”&gt;&lt;xsl:value-of select=“name()”/&gt;&lt;/xsl:variable&gt; &lt;xsl:variable name=“outgi”&gt;&lt;xsl:value-of select=“translate($giname,&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;,&#39;abcdefghijklmnopqrstuvwxyz&#39;)”/&gt;&lt;/xsl:variable&gt; &lt;xsl:element name=“{$outgi}”&gt;</p>
+
+<pre>&lt;xsl:if test=&quot;@compact and (self::ol|self::ul|self::dl)&quot;&gt;
+    &lt;xsl:attribute name=&quot;compact&quot;&gt;yes&lt;/xsl:attribute&gt;
+&lt;/xsl:if&gt;
+&lt;xsl:apply-templates select=&quot;@class&quot;/&gt;
+&lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;</pre>
+
+<p>&lt;/xsl:element&gt; &lt;/xsl:template&gt; &lt;!– @outputclass is not allowed on these in DITA, so do not process @class–&gt; &lt;!– @outputclass is now allowed, so move these back into the rule above –&gt; &lt;!–&lt;xsl:template match=“b|u|i”&gt; &lt;xsl:variable name=“giname”&gt;&lt;xsl:value-of select=“name()”/&gt;&lt;/xsl:variable&gt; &lt;xsl:variable name=“outgi”&gt;&lt;xsl:value-of select=“translate($giname,&#39;BITU&#39;,&#39;bitu&#39;)”/&gt;&lt;/xsl:variable&gt; &lt;xsl:element name=“{$outgi}”&gt;</p>
+
+<pre>&lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;</pre>
+
+<p>&lt;/xsl:element&gt; &lt;/xsl:template&gt;–&gt;</p>
+
+<p>&lt;xsl:template match=“@class”&gt;</p>
+
+<pre>&lt;xsl:attribute name=&quot;outputclass&quot;&gt;&lt;xsl:value-of select=&quot;.&quot;/&gt;&lt;/xsl:attribute&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– empty elements  –&gt;</p>
+
+<p>&lt;!– This template will return true() if there is nothing left in this topic except</p>
+
+<pre>a series of related links. Those links will be gathered in the &lt;related-links&gt; section.
+If this is in the related links, return true(). Otherwise, return false(). 
+The tests are:
+If not a child of body, return false (keep this in output)
+If there are text nodes following, return false
+If there are no nodes following, return true (part of the links, so drop it)
+If there are following elements OTHER than br or a, return false
+Otherwise, this is a br or a at the end --&gt;</pre>
+
+<p>&lt;xsl:template name=“only-related-links-remain”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;not(parent::body)&quot;&gt;false&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;following-sibling::text()&quot;&gt;false&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;not(following-sibling::*)&quot;&gt;true&lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;following-sibling::*[not(self::br or self::a)]&quot;&gt;false&lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;true&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“br”&gt;</p>
+
+<pre>&lt;xsl:variable name=&quot;skip-related-links&quot;&gt;
+  &lt;xsl:call-template name=&quot;only-related-links-remain&quot;/&gt;
+&lt;/xsl:variable&gt;
+&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;$skip-related-links=&#39;true&#39;&quot;/&gt;
+  &lt;xsl:when test=&quot;following-sibling::*[1][self::img]/following-sibling::*[1][self::br]&quot;/&gt;
+  &lt;xsl:when test=&quot;preceding-sibling::*[1][self::img]/preceding-sibling::*[1][self::br]&quot;/&gt;
+  &lt;xsl:when test=&quot;following-sibling::text()|following-sibling::*[not(self::a)]&quot;&gt;
+    &lt;xsl:call-template name=&quot;output-message&quot;&gt;
+      &lt;xsl:with-param name=&quot;msg&quot;&gt;CLEANUP ACTION: Determine the original intent for a BR tag.&lt;/xsl:with-param&gt;
+    &lt;/xsl:call-template&gt;
+    &lt;xsl:comment&gt;A BR tag was used here in the original source.&lt;/xsl:comment&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise/&gt; &lt;!-- Skip br if it ends a section, or only has links following --&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template <a href="@name">match=“meta</a>” mode=“outofline”&gt;</p>
+
+<pre>&lt;othermeta name=&quot;{@name}&quot; content=&quot;{@content}&quot;/&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template <a href="@usemap">match=“img</a>[@src]”&gt;</p>
+
+<pre>&lt;xsl:variable name=&quot;mapid&quot;&gt;&lt;xsl:value-of select=&quot;substring-after(@usemap,&#39;#&#39;)&quot;/&gt;&lt;/xsl:variable&gt;
+&lt;imagemap&gt;
+  &lt;xsl:apply-templates select=&quot;@class&quot;/&gt;
+  &lt;image href=&quot;{@src}&quot;&gt;
+    &lt;xsl:apply-templates select=&quot;@alt&quot;/&gt;
+    &lt;/image&gt;
+  &lt;xsl:apply-templates select=&quot;//map[@id=$mapid or @name=$mapid]&quot; mode=&quot;usemap&quot;/&gt;
+&lt;/imagemap&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“map”/&gt; &lt;xsl:template match=“map” mode=“usemap”&gt;</p>
+
+<pre>&lt;xsl:apply-templates/&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template match=“area”&gt;</p>
+
+<pre>&lt;area&gt;
+    &lt;shape&gt;&lt;xsl:value-of select=&quot;@shape&quot;/&gt;&lt;/shape&gt;
+    &lt;coords&gt;&lt;xsl:value-of select=&quot;@coords&quot;/&gt;&lt;/coords&gt;
+    &lt;xref&gt;
+        &lt;xsl:call-template name=&quot;genlinkattrs&quot;/&gt;
+        &lt;xsl:value-of select=&quot;@alt&quot;/&gt;
+    &lt;/xref&gt;
+&lt;/area&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“img”&gt;</p>
+
+<pre>&lt;image href=&quot;{@src}&quot;&gt;
+  &lt;!-- 03/28/2003 RDA: inline is default, so only worry about break --&gt;
+  &lt;!-- &lt;xsl:if test=&quot;name(parent::*)=&#39;p&#39;&quot;&gt;&lt;xsl:attribute name=&quot;placement&quot;&gt;inline&lt;/xsl:attribute&gt;&lt;/xsl:if&gt;
+  &lt;xsl:if test=&quot;name(parent::*)=&#39;li&#39;&quot;&gt;&lt;xsl:attribute name=&quot;placement&quot;&gt;inline&lt;/xsl:attribute&gt;&lt;/xsl:if&gt; --&gt;
+  &lt;xsl:if test=&quot;preceding-sibling::*[1][self::br]|following-sibling::*[1][self::br]&quot;&gt;
+    &lt;xsl:attribute name=&quot;placement&quot;&gt;break&lt;/xsl:attribute&gt;
+  &lt;/xsl:if&gt;
+  &lt;xsl:apply-templates select=&quot;@class&quot;/&gt;
+  &lt;xsl:apply-templates select=&quot;@alt&quot;/&gt;
+&lt;/image&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“img/@alt”&gt;</p>
+
+<pre>&lt;alt&gt;&lt;xsl:value-of select=&quot;.&quot;/&gt;&lt;/alt&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“hr”&gt; &lt;xsl:comment&gt; ===================== horizontal rule ===================== &lt;/xsl:comment&gt; &lt;/xsl:template&gt;</p>
+
+<p>&lt;!– renames –&gt;</p>
+
+<p>&lt;xsl:template match=“code”&gt;</p>
+
+<pre>&lt;codeph&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/codeph&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“var”&gt;</p>
+
+<pre>&lt;varname&gt;&lt;xsl:apply-templates select=&quot;@class&quot;/&gt;&lt;xsl:value-of select=&quot;.&quot;/&gt;&lt;/varname&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“samp”&gt;</p>
+
+<pre>&lt;systemoutput&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/systemoutput&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“kbd”&gt;</p>
+
+<pre>&lt;userinput&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/userinput&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“em”&gt;</p>
+
+<pre>&lt;i&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/i&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“strong”&gt;</p>
+
+<pre>&lt;b&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/b&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“blockquote”&gt;</p>
+
+<pre>&lt;lq&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/lq&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– &lt;lq&gt; in &lt;lq&gt; is invalid in DITA, so make it valid (though it is a bit strange) –&gt; &lt;xsl:template match=“blockquote/blockquote”&gt;</p>
+
+<pre>&lt;p&gt;&lt;lq&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/lq&gt;&lt;/p&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“pre” priority=“3”&gt;</p>
+
+<pre>&lt;codeblock&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/codeblock&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– assume that these elements are used in tech docs with a semantic intent… –&gt; &lt;xsl:template match=“tt”&gt;</p>
+
+<pre>&lt;codeph&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/codeph&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“i” priority=“3”&gt;</p>
+
+<pre>&lt;varname&gt;&lt;xsl:apply-templates select=&quot;@class&quot;/&gt;&lt;xsl:value-of select=&quot;.&quot;/&gt;&lt;/varname&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Linking –&gt;</p>
+
+<p>&lt;!– May try to eliminate groups of related links at the end; if there is a <br></p>
+
+<pre>followed only by links, ignore them, and let the Collected Links get them.
+Doesn&#39;t work now: if a title is entirely a link, it&#39;s the last link, so it&#39;s ignored... --&gt;</pre>
+
+<p>&lt;xsl:template match=“a”&gt;</p>
+
+<pre>&lt;xsl:variable name=&quot;skip-related-links&quot;&gt;
+  &lt;xsl:call-template name=&quot;only-related-links-remain&quot;/&gt;
+&lt;/xsl:variable&gt;
+&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;@name and $skip-related-links!=&#39;true&#39;&quot;&gt;
+    &lt;xsl:comment&gt;Removed anchor point &lt;xsl:value-of select=&quot;@name&quot;/&gt;&lt;/xsl:comment&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;@id and $skip-related-links!=&#39;true&#39;&quot;&gt;
+    &lt;xsl:comment&gt;Removed anchor point &lt;xsl:value-of select=&quot;@id&quot;/&gt;&lt;/xsl:comment&gt;
+  &lt;/xsl:when&gt;
+&lt;/xsl:choose&gt;
+&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;$skip-related-links=&#39;true&#39;&quot;/&gt;
+  &lt;!-- If a heading is a link, do not create an XREF or it will be out of context --&gt;
+  &lt;xsl:when test=&quot;parent::h1|parent::h2|parent::h3|parent::h4|parent::h5|parent::h6|parent::h7&quot;&gt;
+    &lt;xsl:apply-templates/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;xsl:choose&gt;
+      &lt;xsl:when test=&quot;@href and parent::body&quot;&gt;
+        &lt;p&gt;&lt;xref&gt;
+          &lt;xsl:call-template name=&quot;genlinkattrs&quot;/&gt;
+          &lt;xsl:apply-templates select=&quot;@class&quot;/&gt;
+          &lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;
+        &lt;/xref&gt;&lt;/p&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;@href&quot;&gt;
+        &lt;xref&gt;
+          &lt;xsl:call-template name=&quot;genlinkattrs&quot;/&gt;
+          &lt;xsl:apply-templates select=&quot;@class&quot;/&gt;
+          &lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;
+        &lt;/xref&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;parent::body and text()&quot;&gt;
+        &lt;p&gt;&lt;xsl:apply-templates select=&quot;@class&quot;/&gt;&lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;&lt;/p&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:otherwise&gt;
+        &lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;
+      &lt;/xsl:otherwise&gt;
+    &lt;/xsl:choose&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– HTML table to CALS table –&gt;</p>
+
+<p>&lt;xsl:template match=“td|th” mode=“count-cols”&gt;</p>
+
+<pre>&lt;xsl:param name=&quot;current-count&quot;&gt;1&lt;/xsl:param&gt;
+&lt;xsl:variable name=&quot;current-span&quot;&gt;
+  &lt;xsl:choose&gt;
+    &lt;xsl:when test=&quot;@colspan&quot;&gt;&lt;xsl:value-of select=&quot;@colspan&quot;/&gt;&lt;/xsl:when&gt;
+    &lt;xsl:otherwise&gt;1&lt;/xsl:otherwise&gt;
+  &lt;/xsl:choose&gt;
+&lt;/xsl:variable&gt;
+&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;following-sibling::th or following-sibling::td&quot;&gt;
+    &lt;xsl:apply-templates select=&quot;(following-sibling::th|following-sibling::td)[1]&quot; mode=&quot;count-cols&quot;&gt;
+      &lt;xsl:with-param name=&quot;current-count&quot;&gt;&lt;xsl:value-of select=&quot;number($current-span) + number($current-count)&quot;/&gt;&lt;/xsl:with-param&gt;
+    &lt;/xsl:apply-templates&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;@colspan&quot;&gt;
+    &lt;xsl:value-of select=&quot;number($current-span) + number($current-count) - 1&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;xsl:value-of select=&quot;$current-count&quot;/&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“table”&gt; &lt;xsl:variable name=“cols-in-first-row”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;tbody/tr&quot;&gt;
+    &lt;xsl:apply-templates select=&quot;(tbody[1]/tr[1]/td[1]|tbody[1]/tr[1]/th[1])[1]&quot; mode=&quot;count-cols&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;xsl:apply-templates select=&quot;(tr[1]/td[1]|tr[1]/th[1])[1]&quot; mode=&quot;count-cols&quot;/&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:variable&gt; &lt;xsl:variable name=“width”&gt;</p>
+
+<pre>&lt;xsl:if test=&quot;@width&quot;&gt;&lt;xsl:value-of select=&quot;substring-before(@width,&#39;%&#39;)&quot;/&gt;&lt;/xsl:if&gt;</pre>
+
+<p>&lt;/xsl:variable&gt; &lt;xsl:if test=“@summary and not(@summary=&#39;&#39;)”&gt;</p>
+
+<pre>&lt;xsl:comment&gt;&lt;xsl:value-of select=&quot;@summary&quot;/&gt;&lt;/xsl:comment&gt;
+&lt;xsl:call-template name=&quot;output-message&quot;&gt;
+    &lt;xsl:with-param name=&quot;msg&quot;&gt;The summary attribute on tables cannot be converted to DITA.</pre>
+
+<p>The attribute&#39;s contents were placed in a comment before the table.&lt;/xsl:with-param&gt;</p>
+
+<pre>&lt;/xsl:call-template&gt;</pre>
+
+<p>&lt;/xsl:if&gt; &lt;table&gt;</p>
+
+<pre>  &lt;xsl:apply-templates select=&quot;@class&quot;/&gt;
+  &lt;xsl:if test=&quot;@align&quot;&gt;&lt;xsl:attribute name=&quot;align&quot;&gt;&lt;xsl:value-of select=&quot;@align&quot;/&gt;&lt;/xsl:attribute&gt;&lt;/xsl:if&gt;
+  &lt;xsl:choose&gt;
+      &lt;xsl:when test=&quot;number($width) &amp;lt; 100&quot;&gt;&lt;xsl:attribute name=&quot;pgwide&quot;&gt;0&lt;/xsl:attribute&gt;&lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;string-length($width)&quot;&gt;&lt;xsl:attribute name=&quot;pgwide&quot;&gt;1&lt;/xsl:attribute&gt;&lt;/xsl:when&gt;
+  &lt;/xsl:choose&gt;
+  &lt;xsl:choose&gt;
+      &lt;xsl:when test=&quot;@rules=&#39;none&#39; and @border=&#39;0&#39;&quot;&gt;
+          &lt;xsl:attribute name=&quot;frame&quot;&gt;none&lt;/xsl:attribute&gt;
+          &lt;xsl:attribute name=&quot;rowsep&quot;&gt;0&lt;/xsl:attribute&gt;
+          &lt;xsl:attribute name=&quot;colsep&quot;&gt;0&lt;/xsl:attribute&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;@border=&#39;0&#39;&quot;&gt;
+          &lt;xsl:attribute name=&quot;rowsep&quot;&gt;0&lt;/xsl:attribute&gt;
+          &lt;xsl:attribute name=&quot;colsep&quot;&gt;0&lt;/xsl:attribute&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;@rules=&#39;cols&#39;&quot;&gt;
+          &lt;xsl:attribute name=&quot;rowsep&quot;&gt;0&lt;/xsl:attribute&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:when test=&quot;@rules=&#39;rows&#39;&quot;&gt;
+          &lt;xsl:attribute name=&quot;colsep&quot;&gt;0&lt;/xsl:attribute&gt;
+      &lt;/xsl:when&gt;
+  &lt;/xsl:choose&gt;
+  &lt;xsl:choose&gt;
+    &lt;xsl:when test=&quot;@frame=&#39;void&#39;&quot;&gt;&lt;xsl:attribute name=&quot;frame&quot;&gt;none&lt;/xsl:attribute&gt;&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;@frame=&#39;above&#39;&quot;&gt;&lt;xsl:attribute name=&quot;frame&quot;&gt;top&lt;/xsl:attribute&gt;&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;@frame=&#39;below&#39;&quot;&gt;&lt;xsl:attribute name=&quot;frame&quot;&gt;bottom&lt;/xsl:attribute&gt;&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;@frame=&#39;border&#39;&quot;&gt;&lt;xsl:attribute name=&quot;frame&quot;&gt;all&lt;/xsl:attribute&gt;&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;@frame=&#39;box&#39;&quot;&gt;&lt;xsl:attribute name=&quot;frame&quot;&gt;all&lt;/xsl:attribute&gt;&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;@frame=&#39;hsides&#39;&quot;&gt;&lt;xsl:attribute name=&quot;frame&quot;&gt;topbot&lt;/xsl:attribute&gt;&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;@frame=&#39;lhs&#39;&quot;&gt;&lt;xsl:attribute name=&quot;frame&quot;&gt;sides&lt;/xsl:attribute&gt;&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;@frame=&#39;rhs&#39;&quot;&gt;&lt;xsl:attribute name=&quot;frame&quot;&gt;sides&lt;/xsl:attribute&gt;&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;@frame=&#39;vsides&#39;&quot;&gt;&lt;xsl:attribute name=&quot;frame&quot;&gt;sides&lt;/xsl:attribute&gt;&lt;/xsl:when&gt;
+  &lt;/xsl:choose&gt;
+&lt;xsl:apply-templates select=&quot;caption&quot;/&gt;</pre>
+
+<p>&lt;tgroup&gt; &lt;!– add colspan data here –&gt; &lt;xsl:attribute name=“cols”&gt;&lt;xsl:value-of select=“$cols-in-first-row”/&gt;&lt;/xsl:attribute&gt; &lt;xsl:call-template name=“create-colspec”&gt;</p>
+
+<pre>&lt;xsl:with-param name=&quot;total-cols&quot;&gt;&lt;xsl:value-of select=&quot;$cols-in-first-row&quot;/&gt;&lt;/xsl:with-param&gt;</pre>
+
+<p>&lt;/xsl:call-template&gt; &lt;xsl:choose&gt;</p>
+
+<pre>&lt;xsl:when test=&quot;thead&quot;&gt;
+  &lt;thead&gt;&lt;xsl:apply-templates select=&quot;thead/tr&quot;/&gt;&lt;/thead&gt;
+&lt;/xsl:when&gt;
+&lt;xsl:when test=&quot;tr[th and not(td)]&quot;&gt;
+  &lt;thead&gt;&lt;xsl:apply-templates select=&quot;tr[th and not(td)]&quot;&gt;
+  &lt;!--ideally, do for-each only for rows that contain TH, and place within THEAD;
+      then open up the TBODY for the rest of the rows --&gt;
+  &lt;!-- unforch, all the data will go into one place for now --&gt;
+  &lt;/xsl:apply-templates&gt;&lt;/thead&gt;
+&lt;/xsl:when&gt;</pre>
+
+<p>&lt;/xsl:choose&gt; &lt;tbody&gt;</p>
+
+<pre>&lt;xsl:apply-templates select=&quot;tbody/tr[td]|tr[td]&quot;/&gt;</pre>
+
+<p>&lt;/tbody&gt;&lt;/tgroup&gt;&lt;/table&gt; &lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template name=“create-colspec”&gt;</p>
+
+<pre>&lt;xsl:param name=&quot;total-cols&quot;&gt;0&lt;/xsl:param&gt;
+&lt;xsl:param name=&quot;on-column&quot;&gt;1&lt;/xsl:param&gt;
+&lt;xsl:if test=&quot;$on-column &amp;lt;= $total-cols&quot;&gt;
+  &lt;colspec&gt;
+    &lt;xsl:attribute name=&quot;colname&quot;&gt;col&lt;xsl:value-of select=&quot;$on-column&quot;/&gt;&lt;/xsl:attribute&gt;
+    &lt;xsl:if test=&quot;@align&quot;&gt;&lt;xsl:attribute name=&quot;align&quot;&gt;&lt;xsl:value-of select=&quot;@align&quot;/&gt;&lt;/xsl:attribute&gt;&lt;/xsl:if&gt;
+  &lt;/colspec&gt;
+  &lt;xsl:call-template name=&quot;create-colspec&quot;&gt;
+    &lt;xsl:with-param name=&quot;total-cols&quot;&gt;&lt;xsl:value-of select=&quot;$total-cols&quot;/&gt;&lt;/xsl:with-param&gt;
+    &lt;xsl:with-param name=&quot;on-column&quot;&gt;&lt;xsl:value-of select=&quot;$on-column + 1&quot;/&gt;&lt;/xsl:with-param&gt;
+  &lt;/xsl:call-template&gt;
+&lt;/xsl:if&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“table/caption”&gt;</p>
+
+<pre>&lt;title&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/title&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“tr”&gt; &lt;row&gt;</p>
+
+<pre>&lt;xsl:if test=&quot;@valign&quot;&gt;&lt;xsl:attribute name=&quot;valign&quot;&gt;&lt;xsl:value-of select=&quot;@valign&quot;/&gt;&lt;/xsl:attribute&gt;&lt;/xsl:if&gt;
+&lt;xsl:apply-templates select=&quot;@class&quot;/&gt;
+&lt;xsl:apply-templates/&gt;</pre>
+
+<p>&lt;/row&gt; &lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“td|th”&gt; &lt;entry&gt;</p>
+
+<pre>&lt;xsl:if test=&quot;@rowspan&quot;&gt;
+  &lt;xsl:attribute name=&quot;morerows&quot;&gt;&lt;xsl:value-of select=&quot;number(@rowspan)-1&quot;/&gt;&lt;/xsl:attribute&gt;
+&lt;/xsl:if&gt;
+&lt;xsl:if test=&quot;@colspan&quot;&gt;  &lt;!-- Allow entries to span columns --&gt;
+  &lt;xsl:variable name=&quot;current-cell&quot;&gt;&lt;xsl:call-template name=&quot;current-cell-position&quot;/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:attribute name=&quot;namest&quot;&gt;col&lt;xsl:value-of select=&quot;$current-cell&quot;/&gt;&lt;/xsl:attribute&gt;
+  &lt;xsl:attribute name=&quot;nameend&quot;&gt;col&lt;xsl:value-of select=&quot;$current-cell + number(@colspan) - 1&quot;/&gt;&lt;/xsl:attribute&gt;
+&lt;/xsl:if&gt;
+&lt;xsl:choose&gt;
+    &lt;xsl:when test=&quot;@align&quot;&gt;&lt;xsl:attribute name=&quot;align&quot;&gt;&lt;xsl:value-of select=&quot;@align&quot;/&gt;&lt;/xsl:attribute&gt;&lt;/xsl:when&gt;
+    &lt;xsl:when test=&quot;../@align&quot;&gt;&lt;xsl:attribute name=&quot;align&quot;&gt;&lt;xsl:value-of select=&quot;../@align&quot;/&gt;&lt;/xsl:attribute&gt;&lt;/xsl:when&gt;
+&lt;/xsl:choose&gt;
+&lt;xsl:apply-templates select=&quot;@class&quot;/&gt;
+&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;table&quot;&gt;&lt;p&gt;&lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;&lt;/p&gt;&lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;&lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/entry&gt; &lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Determine which column the current entry sits in. Count the current entry,</p>
+
+<pre>plus every entry before it; take spanned rows and columns into account.
+If any entries in this table span rows, we must examine the entire table to
+be sure of the current column. Use mode=&quot;find-matrix-column&quot;.
+Otherwise, we just need to examine the current row. Use mode=&quot;count-cells&quot;. --&gt;</pre>
+
+<p>&lt;xsl:template name=“current-cell-position”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;parent::tr/parent::thead&quot;&gt;
+    &lt;xsl:apply-templates select=&quot;(ancestor::table[1]/thead/tr/*[1])[1]&quot;
+                         mode=&quot;find-matrix-column&quot;&gt;
+      &lt;xsl:with-param name=&quot;stop-id&quot;&gt;&lt;xsl:value-of select=&quot;generate-id(.)&quot;/&gt;&lt;/xsl:with-param&gt;
+    &lt;/xsl:apply-templates&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;ancestor::table[1]//*[@rowspan][1]&quot;&gt;
+    &lt;xsl:apply-templates select=&quot;(ancestor::table[1]/tbody/tr/*[1]|ancestor::table[1]/tr/*[1])[1]&quot;
+                         mode=&quot;find-matrix-column&quot;&gt;
+      &lt;xsl:with-param name=&quot;stop-id&quot;&gt;&lt;xsl:value-of select=&quot;generate-id(.)&quot;/&gt;&lt;/xsl:with-param&gt;
+    &lt;/xsl:apply-templates&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;not(preceding-sibling::td|preceding-sibling::th)&quot;&gt;1&lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;xsl:apply-templates select=&quot;(preceding-sibling::th|preceding-sibling::td)[last()]&quot; mode=&quot;count-cells&quot;/&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Count the number of cells in the current row. Move backwards from the test cell. Add one</p>
+
+<pre>for each entry, plus the number of spanned columns. --&gt;</pre>
+
+<p>&lt;xsl:template match=“*” mode=“count-cells”&gt;</p>
+
+<pre>&lt;xsl:param name=&quot;current-count&quot;&gt;1&lt;/xsl:param&gt;
+&lt;xsl:variable name=&quot;new-count&quot;&gt;
+  &lt;xsl:choose&gt;
+    &lt;xsl:when test=&quot;@colspan&quot;&gt;&lt;xsl:value-of select=&quot;$current-count + number(@colspan)&quot;/&gt;&lt;/xsl:when&gt;
+    &lt;xsl:otherwise&gt;&lt;xsl:value-of select=&quot;$current-count + 1&quot;/&gt;&lt;/xsl:otherwise&gt;
+  &lt;/xsl:choose&gt;
+&lt;/xsl:variable&gt;
+&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;not(preceding-sibling::td|preceding-sibling::th)&quot;&gt;&lt;xsl:value-of select=&quot;$new-count&quot;/&gt;&lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;xsl:apply-templates select=&quot;(preceding-sibling::th|preceding-sibling::td)[last()]&quot; mode=&quot;count-cells&quot;&gt;
+      &lt;xsl:with-param name=&quot;current-count&quot;&gt;&lt;xsl:value-of select=&quot;$new-count&quot;/&gt;&lt;/xsl:with-param&gt;
+    &lt;/xsl:apply-templates&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Set up a pseudo-matrix to find the column of the current entry. Start with the first entry</p>
+
+<pre>in the first row. Progress to the end of the row, then start the next row; go until we find
+the test cell (with id=$stop-id).
+If an entry spans rows, add the cells that will be covered to $matrix.
+If we get to an entry and its position is already filled in $matrix, then the entry is pushed
+to the side. Add one to the column count and re-try the entry. --&gt;</pre>
+
+<p>&lt;xsl:template match=“*” mode=“find-matrix-column”&gt;</p>
+
+<pre>&lt;xsl:param name=&quot;stop-id&quot;/&gt;
+&lt;xsl:param name=&quot;matrix&quot;/&gt;
+&lt;xsl:param name=&quot;row-count&quot;&gt;1&lt;/xsl:param&gt;
+&lt;xsl:param name=&quot;col-count&quot;&gt;1&lt;/xsl:param&gt;
+&lt;!-- $current-position has the format [1:3] for row 1, col 3. Use to test if this cell is covered. --&gt;
+&lt;xsl:variable name=&quot;current-position&quot;&gt;[&lt;xsl:value-of select=&quot;$row-count&quot;/&gt;:&lt;xsl:value-of select=&quot;$col-count&quot;/&gt;]&lt;/xsl:variable&gt;
+&lt;xsl:choose&gt;
+  &lt;!-- If the current value is already covered, increment the column number and try again. --&gt;
+  &lt;xsl:when test=&quot;contains($matrix,$current-position)&quot;&gt;
+    &lt;xsl:apply-templates select=&quot;.&quot; mode=&quot;find-matrix-column&quot;&gt;
+      &lt;xsl:with-param name=&quot;stop-id&quot;&gt;&lt;xsl:value-of select=&quot;$stop-id&quot;/&gt;&lt;/xsl:with-param&gt;
+      &lt;xsl:with-param name=&quot;matrix&quot;&gt;&lt;xsl:value-of select=&quot;$matrix&quot;/&gt;&lt;/xsl:with-param&gt;
+      &lt;xsl:with-param name=&quot;row-count&quot;&gt;&lt;xsl:value-of select=&quot;$row-count&quot;/&gt;&lt;/xsl:with-param&gt;
+      &lt;xsl:with-param name=&quot;col-count&quot;&gt;&lt;xsl:value-of select=&quot;$col-count + 1&quot;/&gt;&lt;/xsl:with-param&gt;
+    &lt;/xsl:apply-templates&gt;
+  &lt;/xsl:when&gt;
+  &lt;!-- If this is the cell we are testing, return the current column number. --&gt;
+  &lt;xsl:when test=&quot;generate-id(.)=$stop-id&quot;&gt;
+    &lt;xsl:value-of select=&quot;$col-count&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;!-- Figure out what the next column value will be. --&gt;
+    &lt;xsl:variable name=&quot;next-col-count&quot;&gt;
+      &lt;xsl:choose&gt;
+        &lt;xsl:when test=&quot;not(following-sibling::*)&quot;&gt;1&lt;/xsl:when&gt;
+        &lt;xsl:when test=&quot;@colspan&quot;&gt;&lt;xsl:value-of select=&quot;$col-count + number(@colspan) - 1&quot;/&gt;&lt;/xsl:when&gt;
+        &lt;xsl:otherwise&gt;&lt;xsl:value-of select=&quot;$col-count + 1&quot;/&gt;&lt;/xsl:otherwise&gt;
+      &lt;/xsl:choose&gt;
+    &lt;/xsl:variable&gt;
+    &lt;!-- Determine any values that need to be added to the matrix, if this entry spans rows. --&gt;
+    &lt;xsl:variable name=&quot;new-matrix-values&quot;&gt;
+      &lt;xsl:if test=&quot;@rowspan&quot;&gt;
+        &lt;xsl:call-template name=&quot;add-to-matrix&quot;&gt;
+          &lt;xsl:with-param name=&quot;start-row&quot;&gt;&lt;xsl:value-of select=&quot;number($row-count)&quot;/&gt;&lt;/xsl:with-param&gt;
+          &lt;xsl:with-param name=&quot;end-row&quot;&gt;&lt;xsl:value-of select=&quot;number($row-count) + number(@rowspan) - 1&quot;/&gt;&lt;/xsl:with-param&gt;
+          &lt;xsl:with-param name=&quot;start-col&quot;&gt;&lt;xsl:value-of select=&quot;number($col-count)&quot;/&gt;&lt;/xsl:with-param&gt;
+          &lt;xsl:with-param name=&quot;end-col&quot;&gt;
+            &lt;xsl:choose&gt;
+              &lt;xsl:when test=&quot;@colspan&quot;&gt;&lt;xsl:value-of select=&quot;number($col-count) + number(@colspan) - 1&quot;/&gt;&lt;/xsl:when&gt;
+              &lt;xsl:otherwise&gt;&lt;xsl:value-of select=&quot;number($col-count)&quot;/&gt;&lt;/xsl:otherwise&gt;
+            &lt;/xsl:choose&gt;
+          &lt;/xsl:with-param&gt;
+        &lt;/xsl:call-template&gt;
+      &lt;/xsl:if&gt;
+    &lt;/xsl:variable&gt;
+    &lt;xsl:choose&gt;
+      &lt;!-- If there are more entries in this row, move to the next one. --&gt;
+      &lt;xsl:when test=&quot;following-sibling::*&quot;&gt;
+        &lt;xsl:apply-templates select=&quot;following-sibling::*[1]&quot; mode=&quot;find-matrix-column&quot;&gt;
+          &lt;xsl:with-param name=&quot;stop-id&quot;&gt;&lt;xsl:value-of select=&quot;$stop-id&quot;/&gt;&lt;/xsl:with-param&gt;
+          &lt;xsl:with-param name=&quot;matrix&quot;&gt;&lt;xsl:value-of select=&quot;$matrix&quot;/&gt;&lt;xsl:value-of select=&quot;$new-matrix-values&quot;/&gt;&lt;/xsl:with-param&gt;
+          &lt;xsl:with-param name=&quot;row-count&quot;&gt;&lt;xsl:value-of select=&quot;$row-count&quot;/&gt;&lt;/xsl:with-param&gt;
+          &lt;xsl:with-param name=&quot;col-count&quot;&gt;&lt;xsl:value-of select=&quot;$next-col-count&quot;/&gt;&lt;/xsl:with-param&gt;
+        &lt;/xsl:apply-templates&gt;
+      &lt;/xsl:when&gt;
+      &lt;!-- Otherwise, move to the first entry in the next row. --&gt;
+      &lt;xsl:otherwise&gt;
+        &lt;xsl:apply-templates select=&quot;../following-sibling::tr[1]/*[1]&quot; mode=&quot;find-matrix-column&quot;&gt;
+          &lt;xsl:with-param name=&quot;stop-id&quot;&gt;&lt;xsl:value-of select=&quot;$stop-id&quot;/&gt;&lt;/xsl:with-param&gt;
+          &lt;xsl:with-param name=&quot;matrix&quot;&gt;&lt;xsl:value-of select=&quot;$matrix&quot;/&gt;&lt;xsl:value-of select=&quot;$new-matrix-values&quot;/&gt;&lt;/xsl:with-param&gt;
+          &lt;xsl:with-param name=&quot;row-count&quot;&gt;&lt;xsl:value-of select=&quot;$row-count + 1&quot;/&gt;&lt;/xsl:with-param&gt;
+          &lt;xsl:with-param name=&quot;col-count&quot;&gt;&lt;xsl:value-of select=&quot;1&quot;/&gt;&lt;/xsl:with-param&gt;
+        &lt;/xsl:apply-templates&gt;
+      &lt;/xsl:otherwise&gt;
+    &lt;/xsl:choose&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– This template returns values that must be added to the table matrix. Every cell in the box determined</p>
+
+<pre>by start-row, end-row, start-col, and end-col will be added. First add every value from the first
+column. When past $end-row, move to the next column. When past $end-col, every value is added. --&gt;</pre>
+
+<p>&lt;xsl:template name=“add-to-matrix”&gt;</p>
+
+<pre>&lt;xsl:param name=&quot;start-row&quot;/&gt;       
+&lt;xsl:param name=&quot;end-row&quot;/&gt;
+&lt;xsl:param name=&quot;current-row&quot;&gt;&lt;xsl:value-of select=&quot;$start-row&quot;/&gt;&lt;/xsl:param&gt;
+&lt;xsl:param name=&quot;start-col&quot;/&gt;
+&lt;xsl:param name=&quot;end-col&quot;/&gt;
+&lt;xsl:param name=&quot;current-col&quot;&gt;&lt;xsl:value-of select=&quot;$start-col&quot;/&gt;&lt;/xsl:param&gt;
+&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;$current-col &gt; $end-col&quot;/&gt;   &lt;!-- Out of the box; every value has been added --&gt;
+  &lt;xsl:when test=&quot;$current-row &gt; $end-row&quot;&gt;    &lt;!-- Finished with this column; move to next --&gt;
+    &lt;xsl:call-template name=&quot;add-to-matrix&quot;&gt;
+      &lt;xsl:with-param name=&quot;start-row&quot;&gt;&lt;xsl:value-of select=&quot;$start-row&quot;/&gt;&lt;/xsl:with-param&gt;
+      &lt;xsl:with-param name=&quot;end-row&quot;&gt;&lt;xsl:value-of select=&quot;$end-row&quot;/&gt;&lt;/xsl:with-param&gt;
+      &lt;xsl:with-param name=&quot;current-row&quot;&gt;&lt;xsl:value-of select=&quot;$start-row&quot;/&gt;&lt;/xsl:with-param&gt;
+      &lt;xsl:with-param name=&quot;start-col&quot;&gt;&lt;xsl:value-of select=&quot;$start-col&quot;/&gt;&lt;/xsl:with-param&gt;
+      &lt;xsl:with-param name=&quot;end-col&quot;&gt;&lt;xsl:value-of select=&quot;$end-col&quot;/&gt;&lt;/xsl:with-param&gt;
+      &lt;xsl:with-param name=&quot;current-col&quot;&gt;&lt;xsl:value-of select=&quot;$current-col + 1&quot;/&gt;&lt;/xsl:with-param&gt;
+    &lt;/xsl:call-template&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;!-- Output the value for the current entry --&gt;
+    &lt;xsl:text&gt;[&lt;/xsl:text&gt;
+    &lt;xsl:value-of select=&quot;$current-row&quot;/&gt;:&lt;xsl:value-of select=&quot;$current-col&quot;/&gt;
+    &lt;xsl:text&gt;]&lt;/xsl:text&gt;
+    &lt;!-- Move to the next row, in the same column. --&gt;
+    &lt;xsl:call-template name=&quot;add-to-matrix&quot;&gt;
+      &lt;xsl:with-param name=&quot;start-row&quot;&gt;&lt;xsl:value-of select=&quot;$start-row&quot;/&gt;&lt;/xsl:with-param&gt;
+      &lt;xsl:with-param name=&quot;end-row&quot;&gt;&lt;xsl:value-of select=&quot;$end-row&quot;/&gt;&lt;/xsl:with-param&gt;
+      &lt;xsl:with-param name=&quot;current-row&quot;&gt;&lt;xsl:value-of select=&quot;$current-row + 1&quot;/&gt;&lt;/xsl:with-param&gt;
+      &lt;xsl:with-param name=&quot;start-col&quot;&gt;&lt;xsl:value-of select=&quot;$start-col&quot;/&gt;&lt;/xsl:with-param&gt;
+      &lt;xsl:with-param name=&quot;end-col&quot;&gt;&lt;xsl:value-of select=&quot;$end-col&quot;/&gt;&lt;/xsl:with-param&gt;
+      &lt;xsl:with-param name=&quot;current-col&quot;&gt;&lt;xsl:value-of select=&quot;$current-col&quot;/&gt;&lt;/xsl:with-param&gt;
+    &lt;/xsl:call-template&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“tbody|tfoot|thead”&gt;</p>
+
+<pre>&lt;xsl:apply-templates/&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– If a table entry contains a paragraph, and nothing but a paragraph, do not</p>
+
+<pre>create the &lt;p&gt; tag in the &lt;entry&gt;. Let everything fall through into &lt;entry&gt;. --&gt;</pre>
+
+<p>&lt;xsl:template match=“td/p|th/p”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;following-sibling::*|preceding-sibling::*&quot;&gt;
+    &lt;p&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/p&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;normalize-space(following-sibling::text()|preceding-sibling::text())=&#39;&#39;&quot;&gt;
+    &lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;p&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/p&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template <a href="@class='bold'">match=“span</a>”&gt;</p>
+
+<pre>&lt;b&gt;
+  &lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;
+&lt;/b&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template <a href="@class='italic'">match=“span</a>”&gt;</p>
+
+<pre>&lt;i&gt;
+  &lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;
+&lt;/i&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template <a href="@class='bold-italic'">match=“span</a>”&gt;</p>
+
+<pre>&lt;b&gt;&lt;i&gt;
+  &lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;
+&lt;/i&gt;&lt;/b&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– case of span with no attributes at all –&gt;</p>
+
+<p>&lt;xsl:template <a href="not(string(@*))">match=“span</a>”&gt;</p>
+
+<pre>&lt;ph&gt;
+  &lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;
+&lt;/ph&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Search for span styles that Tidy moved into /html/head/style</p>
+
+<pre>Each known value adds something to the return value, such as [b] for bold.
+The returned value is parsed to determine which wrappers to create.
+New values can be added here; processing for the new value will need
+to be merged into the sequential b/i/u/tt processing below. --&gt;</pre>
+
+<p>&lt;xsl:template name=“get-span-style”&gt;</p>
+
+<pre>&lt;xsl:variable name=&quot;classval&quot;&gt;&lt;xsl:value-of select=&quot;@class&quot;/&gt;&lt;/xsl:variable&gt;
+&lt;xsl:variable name=&quot;searchval&quot;&gt;span.&lt;xsl:value-of select=&quot;$classval&quot;/&gt;&lt;/xsl:variable&gt;
+&lt;xsl:variable name=&quot;span-style&quot;&gt;
+  &lt;xsl:value-of select=&quot;substring-before(substring-after(/html/head/style/text(),$searchval),&#39;}&#39;)&quot;/&gt;}&lt;xsl:text/&gt;
+&lt;/xsl:variable&gt;
+&lt;xsl:if test=&quot;contains($span-style,&#39;font-weight:bold&#39;) or contains($span-style,&#39;font-weight :bold&#39;) or
+              contains($span-style,&#39;font-weight: bold&#39;) or 
+              contains($span-style,&#39;font-weight : bold&#39;)&quot;&gt;[b]&lt;/xsl:if&gt;
+&lt;xsl:if test=&quot;contains($span-style,&#39;font-style:italic&#39;) or contains($span-style,&#39;font-style :italic&#39;) or
+              contains($span-style,&#39;font-style: italic&#39;) or 
+              contains($span-style,&#39;font-style : italic&#39;)&quot;&gt;[i]&lt;/xsl:if&gt;
+&lt;xsl:if test=&quot;contains($span-style,&#39;text-decoration: underline&#39;) or contains($span-style,&#39;text-decoration :underline&#39;) or
+              contains($span-style,&#39;text-decoration: underline&#39;) or 
+              contains($span-style,&#39;text-decoration : underline&#39;)&quot;&gt;[u]&lt;/xsl:if&gt;
+&lt;xsl:if test=&quot;contains($span-style,&#39;font-family:Courier&#39;) or contains($span-style,&#39;font-family :Courier&#39;) or
+              contains($span-style,&#39;font-family: Courier&#39;) or 
+              contains($span-style,&#39;font-family : Courier&#39;)&quot;&gt;[tt]&lt;/xsl:if&gt;
+&lt;xsl:if test=&quot;contains($span-style,&#39;font-weight:normal&#39;) or contains($span-style,&#39;font-weight :normal&#39;) or
+              contains($span-style,&#39;font-weight: normal&#39;) or 
+              contains($span-style,&#39;font-weight : normal&#39;)&quot;&gt;[normal]&lt;/xsl:if&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Process a span with a tidy-created class. It is known to have one or more</p>
+
+<pre>values from b, i, u, or tt. For each value, create the element if needed,
+and move on to the next one, passing the style value from /html/head/style --&gt;</pre>
+
+<p>&lt;xsl:template name=“bold-span”&gt;</p>
+
+<pre>&lt;xsl:param name=&quot;span-style&quot;/&gt;
+&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;contains($span-style,&#39;[b]&#39;)&quot;&gt;
+    &lt;b&gt;&lt;xsl:call-template name=&quot;italic-span&quot;&gt;&lt;xsl:with-param name=&quot;span-style&quot; select=&quot;$span-style&quot;/&gt;&lt;/xsl:call-template&gt;&lt;/b&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;&lt;xsl:call-template name=&quot;italic-span&quot;&gt;&lt;xsl:with-param name=&quot;span-style&quot; select=&quot;$span-style&quot;/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template name=“italic-span”&gt;</p>
+
+<pre>&lt;xsl:param name=&quot;span-style&quot;/&gt;
+&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;contains($span-style,&#39;[i]&#39;)&quot;&gt;
+    &lt;i&gt;&lt;xsl:call-template name=&quot;underline-span&quot;&gt;&lt;xsl:with-param name=&quot;span-style&quot; select=&quot;$span-style&quot;/&gt;&lt;/xsl:call-template&gt;&lt;/i&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;&lt;xsl:call-template name=&quot;underline-span&quot;&gt;&lt;xsl:with-param name=&quot;span-style&quot; select=&quot;$span-style&quot;/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template name=“underline-span”&gt;</p>
+
+<pre>&lt;xsl:param name=&quot;span-style&quot;/&gt;
+&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;contains($span-style,&#39;[u]&#39;)&quot;&gt;
+    &lt;u&gt;&lt;xsl:call-template name=&quot;courier-span&quot;&gt;&lt;xsl:with-param name=&quot;span-style&quot; select=&quot;$span-style&quot;/&gt;&lt;/xsl:call-template&gt;&lt;/u&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;&lt;xsl:call-template name=&quot;courier-span&quot;&gt;&lt;xsl:with-param name=&quot;span-style&quot; select=&quot;$span-style&quot;/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template name=“courier-span”&gt;</p>
+
+<pre>&lt;xsl:param name=&quot;span-style&quot;/&gt;
+&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;contains($span-style,&#39;[tt]&#39;)&quot;&gt;
+    &lt;tt&gt;&lt;xsl:call-template name=&quot;normal-span&quot;&gt;&lt;xsl:with-param name=&quot;span-style&quot; select=&quot;$span-style&quot;/&gt;&lt;/xsl:call-template&gt;&lt;/tt&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;&lt;xsl:call-template name=&quot;normal-span&quot;&gt;&lt;xsl:with-param name=&quot;span-style&quot; select=&quot;$span-style&quot;/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template name=“normal-span”&gt;</p>
+
+<pre>&lt;xsl:param name=&quot;span-style&quot;/&gt;
+&lt;xsl:choose&gt;
+  &lt;!-- If a span has &quot;normal&quot; style and nothing else, create &lt;ph&gt; --&gt;
+  &lt;xsl:when test=&quot;contains($span-style,&#39;[normal]&#39;) and 
+                  substring-before($span-style,&#39;[normal]&#39;)=&#39;&#39; and
+                  substring-after($span-style,&#39;[normal]&#39;)=&#39;&#39;&quot;&gt;
+    &lt;ph&gt;&lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;&lt;/ph&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;&lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“span”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;@class=&#39;bold-italic&#39;&quot;&gt;
+    &lt;b&gt;&lt;i&gt;&lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;&lt;/i&gt;&lt;/b&gt;
+  &lt;/xsl:when&gt;
+  &lt;!-- If the span has a value created by tidy, parse /html/head/style --&gt;
+  &lt;xsl:when test=&quot;@class=&#39;c1&#39; or @class=&#39;c2&#39; or @class=&#39;c3&#39; or
+                  @class=&#39;c4&#39; or @class=&#39;c5&#39; or @class=&#39;c6&#39; or
+                  @class=&#39;c7&#39; or @class=&#39;c8&#39; or @class=&#39;c9&#39;&quot;&gt;
+    &lt;xsl:variable name=&quot;span-style&quot;&gt;&lt;xsl:call-template name=&quot;get-span-style&quot;/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:choose&gt;
+      &lt;xsl:when test=&quot;string-length($span-style)&gt;0&quot;&gt;
+        &lt;xsl:call-template name=&quot;bold-span&quot;&gt;&lt;xsl:with-param name=&quot;span-style&quot; select=&quot;$span-style&quot;/&gt;&lt;/xsl:call-template&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:otherwise&gt;
+        &lt;xsl:variable name=&quot;searchval&quot;&gt;span.&lt;xsl:value-of select=&quot;@class&quot;/&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name=&quot;orig-span-style&quot;&gt;
+          &lt;xsl:value-of select=&quot;substring-before(substring-after(/html/head/style/text(),$searchval),&#39;}&#39;)&quot;/&gt;}&lt;xsl:text/&gt;
+        &lt;/xsl:variable&gt;
+        &lt;xsl:call-template name=&quot;output-message&quot;&gt;
+          &lt;xsl:with-param name=&quot;msg&quot;&gt;CLEANUP ACTION: provide a better phrase markup for a SPAN tag.</pre>
+
+<p>The element&#39;s contents have been placed in a phrase element. There is a comment next to the phrase with the span&#39;s class value.&lt;/xsl:with-param&gt;</p>
+
+<pre>      &lt;/xsl:call-template&gt;
+      &lt;xsl:comment&gt;Original: &amp;lt;span @class=&lt;xsl:value-of select=&quot;@class&quot;/&gt;&amp;gt;, &lt;xsl:value-of select=&quot;@class&quot;/&gt;=&lt;xsl:value-of select=&quot;$orig-span-style&quot;/&gt;&lt;/xsl:comment&gt;
+      &lt;ph&gt;&lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;&lt;/ph&gt;
+    &lt;/xsl:otherwise&gt;
+  &lt;/xsl:choose&gt;
+&lt;/xsl:when&gt;
+&lt;xsl:otherwise&gt;
+  &lt;xsl:call-template name=&quot;output-message&quot;&gt;
+    &lt;xsl:with-param name=&quot;msg&quot;&gt;CLEANUP ACTION: provide a better phrase markup for a SPAN tag.</pre>
+
+<p>The element&#39;s contents have been placed in a phrase element. There is a comment next to the phrase with the span&#39;s class value.&lt;/xsl:with-param&gt;</p>
+
+<pre>    &lt;/xsl:call-template&gt;
+    &lt;xsl:comment&gt;Original: &amp;lt;span @class=&lt;xsl:value-of select=&quot;@class&quot;/&gt;&amp;gt;&lt;/xsl:comment&gt;
+    &lt;ph&gt;&lt;xsl:apply-templates select=&quot;@class&quot;/&gt;&lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;&lt;/ph&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– generate dlentry wrapper for DL/DD/DT –&gt;</p>
+
+<p>&lt;xsl:template match=“dt”&gt; &lt;dlentry&gt;</p>
+
+<pre>&lt;dt&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/dt&gt;
+&lt;xsl:apply-templates select=&quot;following-sibling::*[1]&quot; mode=&quot;indirect&quot;/&gt;</pre>
+
+<p>&lt;/dlentry&gt; &lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“dd”/&gt;</p>
+
+<p>&lt;xsl:template match=“dt” mode=“indirect”/&gt; &lt;xsl:template match=“dd” mode=“indirect”&gt;</p>
+
+<pre>&lt;dd&gt;
+  &lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;
+&lt;/dd&gt;
+&lt;xsl:apply-templates select=&quot;following-sibling::*[1]&quot; mode=&quot;indirect&quot;/&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– named templates –&gt;</p>
+
+<p>&lt;!– &lt;xsl:template name=“sect1topic”&gt; &lt;topic xml:lang=“{$default-lang}”&gt;</p>
+
+<pre>&lt;xsl:if test=&quot;@id&quot;&gt;&lt;xsl:attribute name=&quot;id&quot;&gt;&lt;xsl:value-of select=&quot;@id&quot;/&gt;&lt;/xsl:attribute&gt;&lt;/xsl:if&gt;
+&lt;xsl:apply-templates/&gt;</pre>
+
+<p>&lt;/topic&gt; &lt;/xsl:template&gt; –&gt;</p>
+
+<p>&lt;!– things noted for disambiguation –&gt;</p>
+
+<p>&lt;!– encapsulate text within body –&gt; &lt;xsl:template match=“body/text()|body/div/text()”&gt;</p>
+
+<pre>&lt;xsl:variable name=&quot;bodytxt&quot;&gt;&lt;xsl:value-of select=&quot;normalize-space(.)&quot;/&gt;&lt;/xsl:variable&gt;
+&lt;xsl:if test=&quot;string-length($bodytxt)&gt;0&quot;&gt;
+  &lt;!-- issue a message here? Not EVERY time, puleeeze. test for first node if we must... --&gt;
+  &lt;p&gt;
+    &lt;xsl:value-of select=&quot;.&quot;/&gt;
+  &lt;/p&gt;
+&lt;/xsl:if&gt;
+&lt;!-- text nodes get wrapped; blanks fall through --&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– encapsulate phrases within body –&gt; &lt;xsl:template match=“body/i|body/div/i” priority=“4”&gt;</p>
+
+<pre>&lt;p&gt;&lt;i&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/i&gt;&lt;/p&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template match=“body/b|body/div/b” priority=“4”&gt;</p>
+
+<pre>&lt;p&gt;&lt;b&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/b&gt;&lt;/p&gt;</pre>
+
+<p>&lt;/xsl:template&gt; &lt;xsl:template match=“body/u|body/div/u” priority=“4”&gt;</p>
+
+<pre>&lt;p&gt;&lt;u&gt;&lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;&lt;/u&gt;&lt;/p&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– 03/28/2003 RDA: consolidate all &lt;a&gt; processing into single template –&gt; &lt;!– &lt;xsl:template match=“body/a” priority=“4”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;@name&quot;&gt;
+    &lt;xsl:comment&gt;Removed anchor point &lt;xsl:value-of select=&quot;@name&quot;/&gt;&lt;/xsl:comment&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:when test=&quot;@id&quot;&gt;
+    &lt;xsl:comment&gt;Removed anchor point &lt;xsl:value-of select=&quot;@id&quot;/&gt;&lt;/xsl:comment&gt;
+  &lt;/xsl:when&gt;
+&lt;/xsl:choose&gt;
+&lt;xsl:if test=&quot;@href&quot;&gt;
+  &lt;p&gt;
+    &lt;xref&gt;
+      &lt;xsl:call-template name=&quot;genlinkattrs&quot;/&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xref&gt;
+  &lt;/p&gt;
+&lt;/xsl:if&gt;</pre>
+
+<p>&lt;/xsl:template&gt; –&gt;</p>
+
+<p>&lt;!– case of deprecated elements with no clear migrational intent –&gt;</p>
+
+<p>&lt;xsl:template match=“small|big”&gt;</p>
+
+<pre>&lt;xsl:call-template name=&quot;output-message&quot;&gt;
+    &lt;xsl:with-param name=&quot;msg&quot;&gt;CLEANUP ACTION: provide a better phrase markup for a BIG or SMALL tag.</pre>
+
+<p>The element&#39;s contents have been placed in a required-cleanup element.&lt;/xsl:with-param&gt;</p>
+
+<pre>&lt;/xsl:call-template&gt;
+&lt;required-cleanup&gt;
+  &lt;xsl:attribute name=&quot;remap&quot;&gt;&lt;xsl:value-of select=&quot;name()&quot;/&gt;&lt;/xsl:attribute&gt;
+  &lt;ph&gt;
+    &lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;
+  &lt;/ph&gt;
+&lt;/required-cleanup&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“s|strike”&gt;</p>
+
+<pre>&lt;xsl:call-template name=&quot;output-message&quot;&gt;
+    &lt;xsl:with-param name=&quot;msg&quot;&gt;CLEANUP ACTION: provide a better phrase markup for a strikethrough tag.</pre>
+
+<p>The element&#39;s contents have been placed in a required-cleanup element.&lt;/xsl:with-param&gt;</p>
+
+<pre>&lt;/xsl:call-template&gt;
+&lt;required-cleanup&gt;
+  &lt;xsl:attribute name=&quot;remap&quot;&gt;&lt;xsl:value-of select=&quot;name()&quot;/&gt;&lt;/xsl:attribute&gt;
+  &lt;ph&gt;
+    &lt;xsl:apply-templates select=&quot;@class|*|text()|comment()&quot;/&gt;
+  &lt;/ph&gt;
+&lt;/required-cleanup&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– set of rules for faux-pre sections (paragraphs with br, using samp for font effect)–&gt;</p>
+
+<p>&lt;xsl:template <a href="samp">match=“p</a>[not(text())]”&gt;</p>
+
+<pre>&lt;pre&gt;
+ &lt;xsl:apply-templates mode=&quot;re-pre&quot;/&gt;
+&lt;/pre&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“samp” mode=“re-pre”&gt;</p>
+
+<pre>&lt;xsl:apply-templates mode=&quot;re-pre&quot;/&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;xsl:template match=“samp/br” mode=“re-pre”/&gt;&lt;!– won&#39;t need introduced space if original source has it –&gt;</p>
+
+<p>&lt;xsl:template match=“comment()”&gt;</p>
+
+<pre>&lt;xsl:comment&gt;&lt;xsl:value-of select=&quot;.&quot;/&gt;&lt;/xsl:comment&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– =========== CATCH UNDEFINED ELEMENTS (for stylesheet maintainers) =========== –&gt;</p>
+
+<p>&lt;!– (this rule should NOT produce output in production setting) –&gt; &lt;xsl:template match=“*”&gt;</p>
+
+<pre>&lt;xsl:call-template name=&quot;output-message&quot;&gt;
+  &lt;xsl:with-param name=&quot;msg&quot;&gt;CLEANUP ACTION: no DITA equivalent for HTML element &#39;&lt;xsl:value-of select=&quot;name()&quot;/&gt;&#39;.</pre>
+
+<p>The element has been placed in a required-cleanup element.&lt;/xsl:with-param&gt;</p>
+
+<pre>&lt;/xsl:call-template&gt;
+&lt;required-cleanup&gt;
+  &lt;xsl:attribute name=&quot;remap&quot;&gt;&lt;xsl:value-of select=&quot;name()&quot;/&gt;&lt;/xsl:attribute&gt;
+  &lt;ph&gt;
+    &lt;xsl:apply-templates select=&quot;*|text()|comment()&quot;/&gt;
+  &lt;/ph&gt;
+&lt;/required-cleanup&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– ====================================================================================== –&gt; &lt;!– Special templates for pre-processing an XHTML file, in order to merge sequential lists –&gt;</p>
+
+<p>&lt;!– If there are not any split lists surrounding this element, copy it as is. If this is between</p>
+
+<pre>two parts of a split list, it will be pulled in to the preceding list item, so ignore it now. --&gt;</pre>
+
+<p>&lt;xsl:template match=“*|@*|comment()|processing-instruction()|text()” mode=“shift-lists”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;xsl:when test=&quot;not(following-sibling::ol[1][@start]) or not(preceding-sibling::ol)&quot;&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates select=&quot;*|@*|comment()|processing-instruction()|text()&quot; mode=&quot;shift-lists&quot;/&gt;
+    &lt;/xsl:copy&gt;
+  &lt;/xsl:when&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;!-- There is a re-started list after this. Check to make sure the numbers are correct. --&gt;
+    &lt;xsl:variable name=&quot;supposed-next-start&quot;&gt;
+      &lt;xsl:choose&gt;
+        &lt;xsl:when test=&quot;preceding-sibling::ol[1]/@start&quot;&gt;
+          &lt;xsl:value-of select=&quot;number(preceding-sibling::ol[1]/@start) + count(preceding-sibling::ol[1]/li)&quot;/&gt;
+        &lt;/xsl:when&gt;
+        &lt;xsl:otherwise&gt;
+          &lt;xsl:value-of select=&quot;count(preceding-sibling::ol[1]/li) + 1&quot;/&gt;
+        &lt;/xsl:otherwise&gt;
+      &lt;/xsl:choose&gt;
+    &lt;/xsl:variable&gt;
+    &lt;xsl:choose&gt;
+      &lt;!-- If the next list continues the previous, this element was pulled in to the previous list. --&gt;
+      &lt;xsl:when test=&quot;$supposed-next-start=following-sibling::ol[1]/@start&quot;/&gt;
+      &lt;xsl:otherwise&gt;
+        &lt;xsl:copy&gt;
+          &lt;xsl:apply-templates select=&quot;*|@*|comment()|processing-instruction()|text()&quot; mode=&quot;shift-lists&quot;/&gt;
+        &lt;/xsl:copy&gt;
+      &lt;/xsl:otherwise&gt;
+    &lt;/xsl:choose&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Process ordered lists individually. –&gt; &lt;xsl:template match=“ol” mode=“shift-lists”&gt;</p>
+
+<pre>&lt;xsl:choose&gt;
+  &lt;!-- If this could be a continuation, check the @start value against the previous list --&gt;
+  &lt;xsl:when test=&quot;@start and preceding-sibling::ol&quot;&gt;
+    &lt;xsl:variable name=&quot;supposed-start&quot;&gt;
+      &lt;xsl:choose&gt;
+        &lt;xsl:when test=&quot;preceding-sibling::ol[1]/@start&quot;&gt;
+          &lt;xsl:value-of select=&quot;number(preceding-sibling::ol[1]/@start) + count(preceding-sibling::ol[1]/li)&quot;/&gt;
+        &lt;/xsl:when&gt;
+        &lt;xsl:otherwise&gt;
+          &lt;xsl:value-of select=&quot;count(preceding-sibling::ol[1]/li) + 1&quot;/&gt;
+        &lt;/xsl:otherwise&gt;
+      &lt;/xsl:choose&gt;
+    &lt;/xsl:variable&gt;
+    &lt;xsl:choose&gt;
+      &lt;!-- If this continues the previous list, it was pulled in when processing that list. --&gt;
+      &lt;xsl:when test=&quot;$supposed-start=@start&quot;/&gt;
+      &lt;!-- Otherwise, there&#39;s a goof-up somewhere, just copy it to the output --&gt;
+      &lt;xsl:otherwise&gt;
+        &lt;xsl:copy&gt;
+          &lt;xsl:apply-templates select=&quot;*|@*|comment()|processing-instruction()|text()&quot; mode=&quot;shift-lists&quot;/&gt;
+        &lt;/xsl:copy&gt;
+      &lt;/xsl:otherwise&gt;
+    &lt;/xsl:choose&gt;
+  &lt;/xsl:when&gt;
+  &lt;!-- The list does not continue a previous list (though it may start a new one) --&gt;
+  &lt;xsl:otherwise&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates select=&quot;*|@*|comment()|processing-instruction()|text()&quot; mode=&quot;shift-lists&quot;/&gt;
+    &lt;/xsl:copy&gt;
+  &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– All list items but the last one are copied as-is. The last one is also copied, but we need to check</p>
+
+<pre>for continued lists. If this list is continued, everything between this item and the next list should
+be copied in to the end of this list item. After the item is processed, add all of the list items from
+the continue-ing list. --&gt;</pre>
+
+<p>&lt;xsl:template <a href="not(following-sibling::li)">match=“ol/li</a>” mode=“shift-lists”&gt;</p>
+
+<pre>&lt;xsl:variable name=&quot;supposed-next-start&quot;&gt;
+  &lt;xsl:choose&gt;
+    &lt;xsl:when test=&quot;../@start&quot;&gt;&lt;xsl:value-of select=&quot;number(../@start) + count(../li)&quot;/&gt;&lt;/xsl:when&gt;
+    &lt;xsl:otherwise&gt;&lt;xsl:value-of select=&quot;count(../li) + 1&quot;/&gt;&lt;/xsl:otherwise&gt;
+  &lt;/xsl:choose&gt;
+&lt;/xsl:variable&gt;
+&lt;xsl:copy&gt;
+  &lt;xsl:apply-templates select=&quot;*|@*|comment()|processing-instruction()|text()&quot; mode=&quot;shift-lists&quot;/&gt;
+  &lt;xsl:if test=&quot;../following-sibling::ol[1]/@start and $supposed-next-start=../following-sibling::ol[1]/@start&quot;&gt;
+    &lt;xsl:variable name=&quot;next-id&quot;&gt;&lt;xsl:value-of select=&quot;generate-id(../following-sibling::ol[1])&quot;/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:apply-templates 
+         select=&quot;../following-sibling::text()[generate-id(following-sibling::ol[1])=$next-id]|
+                 ../following-sibling::*[generate-id(following-sibling::ol[1])=$next-id]&quot;
+         mode=&quot;add-to-list&quot;/&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:copy&gt;
+&lt;xsl:if test=&quot;../following-sibling::ol[1]/@start and $supposed-next-start=../following-sibling::ol[1]/@start&quot;&gt;
+  &lt;xsl:apply-templates select=&quot;../following-sibling::ol[1]/*&quot; mode=&quot;shift-lists&quot;/&gt;
+&lt;/xsl:if&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Matches anything between 2 lists that are being merged. –&gt; &lt;xsl:template match=“*|@*|comment()|processing-instruction()|text()” mode=“add-to-list”&gt;</p>
+
+<pre>&lt;xsl:copy&gt;
+  &lt;xsl:apply-templates select=&quot;*|@*|comment()|processing-instruction()|text()&quot; mode=&quot;add-to-list&quot;/&gt;
+&lt;/xsl:copy&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;!– Validate the input parameters –&gt; &lt;xsl:template name=“validate-parameters”&gt;</p>
+
+<pre>&lt;xsl:if test=&quot;not($infotype=&#39;topic&#39; or $infotype=&#39;concept&#39; or $infotype=&#39;reference&#39; or $infotype=&#39;task&#39;)&quot;&gt;
+    &lt;xsl:call-template name=&quot;output-message&quot;&gt;
+        &lt;xsl:with-param name=&quot;msg&quot;&gt;&#39;&lt;xsl:value-of select=&quot;$infotype&quot;/&gt;&#39; is an invalid infotype, use &#39;topic&#39; as the default infotype.&lt;/xsl:with-param&gt;
+    &lt;/xsl:call-template&gt;
+&lt;/xsl:if&gt;
+&lt;xsl:if test=&quot;not($dita-extension=&#39;.dita&#39; or $dita-extension=&#39;.xml&#39;)&quot;&gt;
+    &lt;xsl:call-template name=&quot;output-message&quot;&gt;
+        &lt;xsl:with-param name=&quot;msg&quot;&gt;&#39;&lt;xsl:value-of select=&quot;$dita-extension&quot;/&gt;&#39; is an invalid dita extension, please use &#39;.dita&#39; or &#39;.xml&#39; as the dita extension.&lt;/xsl:with-param&gt;
+    &lt;/xsl:call-template&gt;
+&lt;/xsl:if&gt;
+&lt;xsl:if test=&quot;not(contains($FILENAME, &#39;.htm&#39;))&quot;&gt;
+    &lt;xsl:call-template name=&quot;output-message&quot;&gt;
+        &lt;xsl:with-param name=&quot;msg&quot;&gt;The parameter FILENAME should ends with &#39;.htm&#39; or &#39;.html&#39;.&lt;/xsl:with-param&gt;
+    &lt;/xsl:call-template&gt;
+&lt;/xsl:if&gt;</pre>
+
+<p>&lt;/xsl:template&gt;</p>
+
+<p>&lt;/xsl:stylesheet&gt;</p>
+
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.3.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

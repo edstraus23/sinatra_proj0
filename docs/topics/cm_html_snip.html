@@ -1,0 +1,26 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2023"><meta name="generator" content="DITA-OT"><link rel="stylesheet" type="text/css" href="../commonltr.css"><title>HTML Code Snippets</title></head><body id="html-code-snippets"><nav role="toc"><ul><li><a href="../topics/cm_intro.html">Introduction</a><ul><li><a href="../topics/cm_feature.html">Features</a></li><li><a href="../topics/cm_required_software.html">Required Software</a><ul><li><a href="../topics/cm_TE.html">jQuery TE</a></li><li><a href="../topics/cm_ruby.html">Ruby</a><ul><li><a href="../topics/cm_sinatra.html">Sinatra</a></li><li><a href="../topics/cm_datamapper.html">Datamapper</a></li></ul></li><li><a href="../topics/cm_DITA_OT.html">DITA Open Tool Kit</a></li></ul></li></ul></li><li><a href="../topics/cm_install.html">Installation</a></li><li><a href="../topics/cm_setup.html">Setup</a><ul><li><a href="../topics/cm_set_variables.html">Setting Variables</a></li><li><a href="../topics/cm_display_set_of_data.html">Displaying Set of Data</a></li></ul></li><li><a href="../topics/cm_usage.html">Usage</a><ul><li><a href="../topics/cm_run_swcms.html">Running SWCMS</a></li><li><a href="../topics/cm_create_form.html">Creating a Form</a></li><li><a href="../topics/cm_create_entries.html">Creating Entries - HTML Coding</a></li><li><a href="../topics/cm_create_map_html.html">Creating a Bookmap/Topicmap - HTML Coding</a></li><li><a href="../topics/cm_create_maps.html">Creating a Bookmap/TopicMap - Markdown</a></li><li><a href="../topics/cm_run_dita_3_0.html">Running DITA OT 3.0</a></li></ul></li><li class="active"><a href="../topics/cm_html_snip.html">HTML Code Snippets</a></li><li><a href="../topics/cm_md_snip.html">Markdown Code Snippets</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">HTML Code Snippets</h1><div class="body"><p class="p"><strong class="ph b">style</strong></p><pre class="pre codeblock"><code>&lt; style&gt; table {style="border-width:1px;border-color:black}&lt; /style&gt; </code></pre><p class="p"><strong class="ph b">image</strong></p><pre class="pre codeblock"><code>&lt; img src="images/rollins.jfif" width="100px"&gt; </code></pre><p class="p"><strong class="ph b">two column table example:</strong></p><pre class="pre codeblock"><code>&lt; table border="1"&gt; &lt; tr&gt;&lt;td&gt;&lt;b&gt;heading 1&lt;/b&gt;&lt;/td&gt;td&gt;&lt;b&gt;heading 2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt; &lt; tr&gt;&lt;td&gt;cell 1&lt;/td&gt;&lt;td&gt;cell 2&lt;/td&gt;&lt;/tr&gt; &lt; /table&gt; </code></pre><p class="p"><strong class="ph b">three column table example:</strong></p><pre class="pre codeblock"><code>&lt; table border="1"&gt; &lt; tr&gt;&lt;td&gt;&lt;b&gt;heading 1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;heading 2&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;heading 3&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt; tr&gt;&lt;td&gt;cell 1&lt;/td&gt;&lt;td&gt;cell 2&lt;/td&gt;&lt;td&gt;cell 3&lt;/td&gt;&lt;/tr&gt; &lt; /table&gt; </code></pre><p class="p"><strong class="ph b">four column table example:</strong></p><pre class="pre codeblock"><code>&lt; table border="1"&gt; &lt; tr&gt;&lt;td&gt;&lt;b&gt;heading 1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;heading 2&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;heading 2&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;heading 4&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt; tr&gt;&lt;td&gt;cell 1&lt;/td&gt;&lt;td&gt;cell 2&lt;/td&gt;&lt;td&gt;cell 3&lt;/td&gt;&lt;td&gt;cell 4&lt;/td&gt;&lt;/tr&gt;&lt; /table&gt;</code></pre><p class="p"><strong class="ph b">topicmap example:</strong></p><pre class="pre codeblock"><code>&lt; map&gt;
+&lt;title&gt;DITA work at OASIS&lt;/title&gt; 
+&lt;topicref href="oasis-dita-technical-committees.dita"&gt; 
+&lt;topicref href="dita_technical_committee.dita"/&gt; 
+&lt;topicref href="dita_adoption_technical_committee.dita" /&gt; 
+&lt;/topicref&gt; 
+&lt;mapref href"oasis-processes.ditamap"/&gt;
+&lt;/map&gt; </code></pre><p class="p"><strong class="ph b">bookmap example:</strong></p><pre class="pre codeblock"><code>&lt; bookmap id="taskbook"&gt;
+&lt; booktitle&gt;
+&lt; booklibrary&gt;Retro Tools&lt;/booklibrary&gt;
+&lt; mainbooktitle&gt;Product tasks&lt;/mainbooktitle&gt;
+&lt; booktitlealt&gt;Tasks and what they can do&lt;/booktitlealt&gt;&lt;/booktitle&gt;
+&lt; frontmatter&gt;
+&lt; booklists&gt;&lt;toc/&gt;&lt;/booklists&gt;
+&lt;notices href="taskbook/notices.dita"&gt;
+&lt;topicref href="taskbook/trademarks.dita"&gt;&lt;/topicref&gt;
+&lt; /notices&gt;
+&lt; /frontmatter&gt;
+&lt; chapter href="taskbook/installing.dita"&gt;
+&lt;topicref href="taskbook/installstorage.dita"&gt;
+&lt;/topicref&gt;
+&lt; /chapter&gt;
+&lt; appendix href="taskbook/task_appendix.dita"&gt;&lt;/appendix&gt;
+&lt; /bookmap&gt;</code></pre></div></article></main></body></html>
