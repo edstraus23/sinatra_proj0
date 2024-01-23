@@ -23,4 +23,4 @@ gem install sinatra
 gem install datamapper
 ```
 - erb - Used for creating a Framework for the pages of web application
-- DITA OT - Used to output the contents in different formats (xhtml, PDF, PDF2, etc.). A newer implementation allows the use of markdown language.
+- DITA OT - Used to output the contents in different formats (xhtml, PDF, PDF2, and so on). A newer implementation allows the use of markdown language.
