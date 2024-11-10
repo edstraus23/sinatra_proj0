@@ -7,7 +7,7 @@ require "yard/sinatra"
 
 
 # Set variables
-sinatra_dir="/home/eric/sinatra_md1"
+sinatra_dir="/home/eric/sinatra_proj0"
 ditaot_dir="/home/eric/dita-ot-3.6/docsrc"
 java_dir="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
 
